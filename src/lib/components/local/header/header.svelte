@@ -1,48 +1,54 @@
-<script lang="ts">
-    import { setMode, mode } from "mode-watcher";
-    import { buttonVariants } from "$shadcn/button";
+<script>
 
-
-    function handleModeChange() {
-        if ($mode === "dark")
-            setMode("light");
-         else
-            setMode("dark");
-
-    }
+    import {Separator} from "$lib/components/ui/separator";
 </script>
 
-<div class="w-screen">
-    <div class="flex flex-col gap-4 p-4 md:p-6 w-full max-w-screen-lg mx-auto border-b min-h-[3rem] border-x">
 
-        <div class="w-full h-full flex justify-between items-center align-middle flex-wrap sm:flex-nowrap">
-            <div class="flex gap-4 items-center">
-                <a
-                        href="/"
-                        class="md:text-2xl font-bold sm:text-lg"
-                >Adrian Donnelly</a>
-            </div>
+<svelte:head>
 
-            <div class="flex items-center sm:gap-2 md:gap-4 gap-2">
-                <a href="/blog" class="sm:text-sm md:text-lg text-sm font-medium">Blog</a>
-                <a href="/projects" class="sm:text-sm md:text-lg text-sm font-medium">Projects</a>
-                <a href="/contact" class="sm:text-sm md:text-lg text-sm font-medium">Contact</a>
-                <a href="/about" class="sm:text-sm md:text-lg text-sm font-medium">About</a>
-                <a href="/cv" class="sm:text-sm md:text-lg text-sm font-medium">CV</a>
+    <title>Adrian Donnelly</title>
 
-<!--                &lt;!&ndash; Theme Toggle &ndash;&gt;-->
-<!--                <div class="flex items-center gap-2">-->
-<!--                    <button-->
-<!--                            class={buttonVariants({ variant: "ghost" })}-->
-<!--                            on:click={handleModeChange}>-->
-<!--                        {#if $mode !== "dark"}-->
-<!--                            <span class="text-sm">🌙</span>-->
-<!--                        {:else}-->
-<!--                            <span class="text-sm">☀️</span>-->
-<!--                        {/if}-->
-<!--                    </button>-->
-<!--                </div>-->
-            </div>
+</svelte:head>
+
+
+<nav class="bg-black">
+
+    <div class="text-white mt-4 ml-6 mr-6">
+
+        <h1 class="scroll-m-20 text-2xl font-extrabold tracking-tight ">Adrian Donnelly</h1>
+
+        <Separator class="my-4"/>
+
+
+        <div class="flex flex-row gap-3 text-muted-foreground ">
+
+            <h1 class="scroll-m-20 text-l font-semibold tracking-tight hover:text-white duration-200"><a
+
+                    href="https://www.linkedin.com/in/adrdonnelly/">LinkedIn</a></h1>
+
+            <Separator orientation="vertical"/>
+
+
+            <h1 class="scroll-m-20 text-l font-semibold tracking-tight hover:text-white duration-200"><a
+
+                    href="mailto:adrian.donnelly15@outlook.com">Email</a></h1>
+
+            <Separator orientation="vertical"/>
+
+
+            <h1 class="scroll-m-20 text-l font-semibold tracking-tight hover:text-white duration-200"><a
+
+                    href="https://github.com/AdrianDonnelly">Github</a></h1>
+
+            <Separator orientation="vertical"/>
+
+
+            <h1 class="scroll-m-20 text-l font-semibold tracking-tight hover:text-white duration-200"><a
+
+                    href="https://github.com/AdrianDonnelly">Blog</a></h1>
+
         </div>
+
     </div>
-</div>
+
+</nav>

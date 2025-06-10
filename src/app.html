@@ -1,15 +1,16 @@
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <link rel="icon" href="%sveltekit.assets%/favicon.png" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="description" content="%sveltekit.appDescription%" />
-    <title>%sveltekit.title%</title>
+<!doctype html>
+<html class="dark" id="html" lang="en" style="background-color: #09090b; color-scheme: dark;">
+<head>
+    <!-- Metadata -->
+    <meta charset="utf-8"/>
+    <link href="%sveltekit.assets%/favicon.ico" rel="icon"/>
+    <meta content="width=device-width, initial-scale=1" name="viewport"/>
+    <link href="https://grzegorz.ie/" rel="canonical"/>
     %sveltekit.head%
-  </head>
-
-  <body class="bg-black">
-    <div style="display: contents">%sveltekit.body%</div>
-  </body>
+</head>
+<body class="flex justify-center max-w-[100vw] overflow-x-hidden" data-sveltekit-preload-data="hover">
+<div class="w-full flex flex-col items-center">
+    %sveltekit.body%
+</div>
+</body>
 </html>

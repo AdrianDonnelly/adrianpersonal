@@ -17,7 +17,7 @@
         { name: "Contact", url: "https://adriandonnelly.me/contact" },
         { name: "Blog", url: "https://adriandonnelly.me/blog" },
         { name: "Projects", url: "https://adriandonnelly.me/projects" },
-        //{ name: "Resume", url: "https://adriandonnelly.me/cv" },
+        { name: "Resume", url: "https://adriandonnelly.me/cv" },
     ];
 
     // Conditionally add RecentPosts to breadCrumbs
@@ -37,7 +37,6 @@
     <link href="https://assets.calendly.com/assets/external/widget.css" rel="stylesheet">
     <script src="https://assets.calendly.com/assets/external/widget.js" type="text/javascript" async></script>
 </svelte:head>
-
 <CustomHead
         {breadCrumbs}
 />
