@@ -71,9 +71,9 @@
     }
 </style>
 
-<div class='flex flex-col w-full max-w-screen-lg mx-auto border-x'>
+<div class='flex flex-col w-full max-w-screen-lg mx-auto -x'>
 
-    <div class='w-full h-full flex justify-between items-center border-y bg-muted/25'>
+    <div class='w-full h-full flex justify-between items-center bg-muted/25'>
         <h2 class='font-bold text-2xl p-2'>
             Featured Posts
         </h2>
@@ -82,7 +82,7 @@
     {#if FeaturedPosts && FeaturedPosts.length > 0}
         <div class='w-full h-full flex justify-between items-center md:flex-nowrap flex-wrap'>
             {#each FeaturedPosts as post, i}
-                <span class={cn(`flex-grow md:max-w-[50%] max-w-[100%]`, i !== FeaturedPosts.length - 1 && 'border-r')}>
+                <span class={cn(`flex-grow md:max-w-[50%] max-w-[100%]`, i !== FeaturedPosts.length - 1 && '-r')}>
                     <BigCard {...post}/>
                 </span>
             {/each}
@@ -91,16 +91,16 @@
         <p class="p-4 text-center text-muted-foreground">No featured posts to display yet.</p>
     {/if}
 
-    <div class="h-6 min-h-6 border-y"></div>
+    <div class="h-6 min-h-6 -y"></div>
 
-    <div class='w-full h-full flex justify-between items-center border-b bg-muted/25'>
+    <div class='w-full h-full flex justify-between items-center -b bg-muted/25'>
         <h2 class='font-bold text-2xl p-2'>
             What have I been up to?
         </h2>
     </div>
 
-    <div class=" border-b flex h-10 items-center">
-        <p class="w-10 h-10 border-r flex items-center justify-center text-muted-foreground font-bold">
+    <div class=" -b flex h-10 items-center">
+        <p class="w-10 h-10 -r flex items-center justify-center text-muted-foreground font-bold">
             0
         </p>
         <p class="p-2 text-sm text-muted-foreground">
@@ -117,8 +117,8 @@
             description="Actively exploring and building new projects in the startup space, leveraging my software development background to bring innovative ideas to life."
     />
 
-    <div class=" border-b flex h-10 items-center">
-        <p class="w-10 h-10 border-r flex items-center justify-center text-muted-foreground font-bold">
+    <div class=" -b flex h-10 items-center">
+        <p class="w-10 h-10 -r flex items-center justify-center text-muted-foreground font-bold">
             1
         </p>
         <p class="p-2 text-sm text-muted-foreground">
@@ -135,8 +135,8 @@
             description="Successfully completed a comprehensive program in Computing with Software Development, focusing on modern software engineering principles and practices."
     />
 
-    <div class=" border-b flex h-10 items-center">
-        <p class="w-10 h-10 border-r flex items-center justify-center text-muted-foreground font-bold">
+    <div class=" -b flex h-10 items-center">
+        <p class="w-10 h-10 -r flex items-center justify-center text-muted-foreground font-bold">
             2
         </p>
         <p class="p-2 text-sm text-muted-foreground">
@@ -155,11 +155,11 @@
 
     <div class="h-6 min-h-6"></div>
 
-    <div class='w-full h-full flex justify-between items-center border-y bg-muted/25'>
+    <div class='w-full h-full flex justify-between items-center -y bg-muted/25'>
         <h2 class='font-bold text-2xl p-2'>
             Recent Posts
         </h2>
-        <div class="hidden sm:flex align-middle items-center gap-x-3 text-sm text-muted-foreground border-l self-stretch">
+        <div class="hidden sm:flex align-middle items-center gap-x-3 text-sm text-muted-foreground -l self-stretch">
             <h3 class="text-center w-[8rem] font-bold">
                 Date Published
             </h3>
@@ -169,7 +169,7 @@
     {#if RecentPosts && RecentPosts.length > 0}
         <div class='w-full h-full flex flex-col justify-between items-center '>
             {#each RecentPosts as post, i }
-                <span class={cn('w-full post-small flex-grow transition duration-200 hover:bg-gray-100 hover:text-black', i !== RecentPosts.length - 1 && 'border-b')}>
+                <span class={cn('w-full post-small flex-grow transition duration-200 hover:bg-gray-100 hover:text-black', i !== RecentPosts.length - 1 && '-b')}>
                     <SmallCard {...post}/>
                 </span>
             {/each}
@@ -178,46 +178,6 @@
         <p class="p-4 text-center text-muted-foreground">No recent posts to display yet.</p>
     {/if}
 
-    <div class="h-6 border-t min-h-6"></div>
+    <div class="h-6 -t min-h-6"></div>
 
-    <div class='w-full h-full flex justify-between items-center border-y bg-muted/25'>
-        <h2 class='font-bold text-2xl p-2'>
-            Archive
-        </h2>
-    </div>
-
-    {#if PostYears && PostYears.length > 0}
-        <div class='w-full h-full flex justify-between items-center'>
-            {#each PostYears as year, i}
-                <a class={cn(
-                    "flex-grow pl-5 py-2 hover:bg-gray-100 hover:text-black transition duration-200",
-                    i !== PostYears.length - 1 && 'border-r',)}
-                   href="/blog?year={year[0]}">
-                    <h2 class="text-xl font-bold">{year[0]}</h2>
-                    <p class="text-muted-foreground text-sm">{year[1]} posts</p>
-                </a>
-            {/each}
-        </div>
-    {:else}
-        <p class="p-4 text-center text-muted-foreground">No archives to display yet.</p>
-    {/if}
-
-    <div class="h-6 border-t min-h-6"></div>
-
-    <div class='w-full h-full flex justify-between items-center border-y bg-muted/25'>
-        <h2 class='font-bold text-2xl p-2'>
-            View All Posts
-        </h2>
-        <div class="flex align-middle items-center gap-x-3 text-sm text-muted-foreground border-l self-stretch">
-            <h3 class="text-center px-5">
-                {Posts?.length ?? 0} Posts across {PostYears?.length ?? 0} Years
-            </h3>
-        </div>
-    </div>
-
-    <div class='border-b'>
-        <Button href='/blog' class='w-full p-7 rounded-none light:hover:bg-primary dark:hover:bg-primary hover:text-black' variant="ghost">
-            View All Posts
-        </Button>
-    </div>
 </div>

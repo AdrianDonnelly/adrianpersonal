@@ -6,13 +6,13 @@
     <title>Adrian Donnelly</title>
 </svelte:head>
 
-<nav class="bg-black max-w-265 w-full">
+<nav class="flex flex-col w-full max-w-screen-lg mx-auto -x">
     <div class="text-white mt-4 ml-6 mr-6">
         <h1 class="scroll-m-20 text-2xl font-extrabold tracking-tight w-full">Adrian Donnelly</h1>
 
         <Separator class="my-4"/>
 
-        <div class="flex flex-row gap-3 text-muted-foreground ">
+        <div class="flex flex-row gap-3 text-muted-foreground mb-3">
             <h1 class="scroll-m-20 text-l font-semibold tracking-tight hover:text-white duration-200"><a
                     href="https://www.linkedin.com/in/adrdonnelly/">LinkedIn</a></h1>
             <Separator orientation="vertical"/>

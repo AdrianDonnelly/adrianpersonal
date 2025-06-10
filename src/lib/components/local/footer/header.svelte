@@ -5,20 +5,20 @@
 <div class="w-screen mt-[10rem] relative">
 
     <div class="
-        flex flex-col w-full max-w-screen-lg mx-auto border-t border-x
+        flex flex-col w-full max-w-screen-lg mx-auto p1-t p1-x
     ">
 
-        <div class="flex flex-col gap-5 border-b bg-muted/25 items-center">
+        <div class="flex flex-col gap-5 p1-b bg-muted/25 items-center">
             <div class="text-sm flex">
-                <a href="mailto:contact@grzegorz.ie" class="text-primary p-4 border-l text-center">
-                    web@grzegorz.ie
+                <a href="mailto:adrian.donnelly15@outlook.com" class="text-primary p-4 p1-l text-center">
+                    Email
                 </a>
 
-                <a href="https://www.linkedin.com/in/grzegorz-maniak/" class="text-primary p-4 border-x text-center">
+                <a href="https://www.linkedin.com/in/adrdonnelly/" class="text-primary p-4 p1-x text-center">
                     LinkedIn
                 </a>
 
-                <a href="https://www.github.com/grzegorzmaniak" class="text-primary p-4 border-r text-center">
+                <a href="https://github.com/AdrianDonnelly" class="text-primary p-4 p1-r text-center">
                     GitHub
                 </a>
             </div>

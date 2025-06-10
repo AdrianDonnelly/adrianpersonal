@@ -35,8 +35,8 @@
     /* Styles specific to the full article markdown rendering */
     .markdown-container :global(img) { /* Use :global for nested elements */
         max-width: 100%;
-        border-top: 1px solid var(--border);
-        border-bottom: 1px solid var(--border);
+        -top: 1px solid var(--);
+        -bottom: 1px solid var(--);
         height: auto;
     }
 
@@ -45,9 +45,9 @@
     .markdown-container :global(h3),
     .markdown-container :global(h4) {
         font-weight: bold;
-        border-bottom: 1px solid var(--border); /* Simplified variable access */
+        -bottom: 1px solid var(--); /* Simplified variable access */
 
-        border-top: 1px solid var(--border);
+        -top: 1px solid var(--);
         width: 100%;
         display: flex;
         justify-content: space-between;
@@ -87,7 +87,7 @@
     }
 
     .markdown-container :global(blockquote) {
-        border-left: 0.25rem solid var(--border);
+        -left: 0.25rem solid var(--);
         color: inherit;
         background-color: color-mix(in oklab, var(--muted) 25%, transparent);
         padding-bottom: 0.25rem;
@@ -96,7 +96,7 @@
     .markdown-container :global(code) {
         background-color: var(--muted); /* Use theme variables */
         padding: 0.2rem 0.4rem;
-        border-radius: 0.25rem;
+        -radius: 0.25rem;
         font-size: 0.9em; /* Relative size */
         color: var(--muted-foreground);
     }
@@ -104,7 +104,7 @@
     .markdown-container :global(pre) {
         background-color: var(--muted);
         padding: 0.8rem;
-        border-radius: 0.25rem;
+        -radius: 0.25rem;
         margin-left: 0.5rem;
         margin-right: 0.5rem;
         font-size: 0.9em;
@@ -115,7 +115,7 @@
     .markdown-container :global(pre code) {
         background-color: transparent;
         padding: 0;
-        border-radius: 0;
+        -radius: 0;
         font-size: inherit; /* Inherit from pre */
         color: inherit;
     }
@@ -149,13 +149,13 @@
 
     .markdown-container :global(table) {
         width: 100%;
-        border-collapse: collapse;
-        border: 1px solid var(--border);
+        -collapse: collapse;
+        : 1px solid var(--);
     }
 
     .markdown-container :global(th),
     .markdown-container :global(td) {
-        border: 1px solid var(--border);
+        : 1px solid var(--);
         padding: 0.5rem 0.75rem;
         text-align: left;
     }
@@ -175,49 +175,33 @@
         overflow: hidden;
         clip: rect(0, 0, 0, 0);
         white-space: nowrap;
-        border: 0;
+        : 0;
     }
 </style>
 
 <article class={cn("w-full flex flex-col", className)} {id} data-tags={tags.join(', ')}>
     <div class='flex flex-col'>
-        <Grid
-                rows={4}
-                smallRows={4}
-                columns={12}
-                smallColumns={8}
-                class="w-full h-full border-b"
-                cellClass="hover:bg-primary dark:hover:bg-primary transition-color duration-500"
-        >
-            <div class="border-r border-b h-full p-2 flex flex-col items-center justify-center bg-[#09090b]">
-                <svelte:element
-                        this={HeadingTag}
-                        class="text-1xl sm:text-2xl md:text-3xl font-bold text-primary leading-tight text-center">
-                    {title}
-                </svelte:element>
-            </div>
-        </Grid>
     </div>
 
     <header class="w-full flex flex-col">
-        <div class='flex flex-col gap-5 border-b bg-muted/25 items-center'>
+        <div class='flex flex-col gap-5 -b bg-muted/25 items-center'>
             <div class="text-sm flex">
                 <time dateTime={date.toISOString()} class={cn(
-                    "text-primary p-3 border-l px-5 text-center",
-                    (!dateModified && !link) && "border-r",
-                    (!dateModified && link) && "border-r",
+                    "text-primary p-3 -l px-5 text-center",
+                    (!dateModified && !link) && "-r",
+                    (!dateModified && link) && "-r",
                 )}>
                     Published: {date.toLocaleDateString()}
                 </time>
 
                 {#if dateModified}
-                    <time dateTime={dateModified.toISOString()} class="text-primary p-3 px-5 border-x text-center">
+                    <time dateTime={dateModified.toISOString()} class="text-primary p-3 px-5 -x text-center">
                         Modified: {dateModified.toLocaleDateString()}
                     </time>
                 {/if}
 
                 {#if link}
-                    <Button class="rounded-none light:hover:bg-primary dark:hover:bg-primary h-full hover:text-black p-3 px-5 border-r text-center" variant="ghost" href={link}>
+                    <Button class="rounded-none light:hover:bg-primary dark:hover:bg-primary h-full hover:text-black p-3 px-5 -r text-center" variant="ghost" href={link}>
                         View original post
                     </Button>
                 {/if}
@@ -265,14 +249,14 @@
     </section>
 
     {#if tags.length > 0}
-        <div class="h-6 border-t min-h-6"></div>
-        <div class='w-full h-full flex justify-between items-center border-t bg-muted/25'>
+        <div class="h-6 -t min-h-6"></div>
+        <div class='w-full h-full flex justify-between items-center -t bg-muted/25'>
             <h2 class='font-bold text-2xl p-2'>
                 Tags
             </h2>
         </div>
 
-        <footer class="border-t">
+        <footer class="-t">
             <section aria-label="Tags">
                 <ul class="flex flex-row flex-wrap gap-2 p-2">
                     {#each tags as tag}

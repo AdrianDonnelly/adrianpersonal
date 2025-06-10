@@ -101,11 +101,11 @@
 </svelte:head>
 
 <div class={cn(className, 'w-screen flex justify-center items-center ')}>
-    <div class='max-w-screen-lg w-full h-full flex flex-col align-top border-x'>
+    <div class='max-w-screen-lg w-full h-full flex flex-col align-top -x'>
         <Post {...props}/>
 
-        <div class="h-6 border-t min-h-6"></div>
-        <div class='w-full h-full flex justify-between items-center border-y bg-muted/25'>
+        <div class="h-6 -t min-h-6"></div>
+        <div class='w-full h-full flex justify-between items-center -y bg-muted/25'>
             <h2 class='font-bold text-2xl p-2'>
                 Share
             </h2>
@@ -116,7 +116,7 @@
                 href={`https://www.twitter.com/intent/tweet?text=Check out this post on Adrian Donnelly's blog: ${props.title}&url=https://adriandonnelly.me//post/${props.id}`}
                 target="_blank"
                 rel="noopener noreferrer"
-                class="text-gray-400 border-x p-3 light:hover:bg-primary dark:hover:bg-primary hover:text-black"
+                class="text-gray-400 -x p-3 light:hover:bg-primary dark:hover:bg-primary hover:text-black"
                 aria-label="Share on Twitter / X"
             >
                 <Twitter size={24} class="stroke-[1.5px]"/>
@@ -127,7 +127,7 @@
                 href={`https://www.linkedin.com/shareArticle?mini=true&title=${props.title}&summary=${props.body}&url=https://adriandonnelly.me//post/${props.id}`}
                 target="_blank"
                 rel="noopener noreferrer"
-                class="text-gray-400 border-r p-3 light:hover:bg-primary dark:hover:bg-primary hover:text-black"
+                class="text-gray-400 -r p-3 light:hover:bg-primary dark:hover:bg-primary hover:text-black"
                 aria-label="Share on LinkedIn"
             >
                 <LinkedIn size={24} class="stroke-[1.5px]"/>
@@ -138,7 +138,7 @@
                 href={`mailto:?subject=${props.title}&body=Check out this post on Adrian Donnelly's blog: https://adriandonnelly.me//post/${props.id}`}
                 target="_blank"
                 rel="noopener noreferrer"
-                class="text-gray-400 border-r p-3 light:hover:bg-primary dark:hover:bg-primary hover:text-black"
+                class="text-gray-400 -r p-3 light:hover:bg-primary dark:hover:bg-primary hover:text-black"
                 aria-label="Share via Email"
             >
                 <Email size={24} class="stroke-[1.5px]"/>
@@ -148,7 +148,7 @@
             <a
                 on:click={() => navigator.clipboard.writeText(`https://adriandonnelly.me//post/${props.id}`)}
                 href="#"
-                class="text-gray-400 border-r p-3 light:hover:bg-primary dark:hover:bg-primary hover:text-black"
+                class="text-gray-400 -r p-3 light:hover:bg-primary dark:hover:bg-primary hover:text-black"
                 aria-label="Copy Link"
             >
                 <Link size={24} class="stroke-[1.5px]"/>
@@ -157,20 +157,20 @@
         </div>
 
         {#if props.people ?? 0 > 0}
-            <div class="h-6 border-t min-h-6"></div>
-            <div class='w-full h-full flex justify-between items-center border-t bg-muted/25'>
+            <div class="h-6 -t min-h-6"></div>
+            <div class='w-full h-full flex justify-between items-center -t bg-muted/25'>
                 <h2 class='font-bold text-2xl p-2'>
                     People Mentioned
                 </h2>
             </div>
 
             <section aria-label="People Mentioned" class="flex justify-between align-middle flex-col">
-                <div class="flex flex-col border-b">
+                <div class="flex flex-col -b">
                     {#each props.people ?? [] as person, i}
-                        <div class="border-t flex items-start h-full">
+                        <div class="-t flex items-start h-full">
                             <div
                                     style="height: inherit"
-                                    class="border-r h-full flex-grow">
+                                    class="-r h-full flex-grow">
                                 <p class="md:w-10 md:min-w-10 w-[4rem] min-h-10 min-w-[4rem] flex items-center justify-center text-muted-foreground font-bold">
                                     {i + 1}
                                 </p>
@@ -195,10 +195,10 @@
                                     style="height: inherit"
                                     class="flex flex-col w-full md:w-[50%] h-full overflow-hidden">
                                 {#each person.links ?? [] as link, j}
-                                    <div style="height: inherit" class={cn("flex items-center overflow-hidden", j !== (person.links ?? []).length - 1 && 'border-b')}>
+                                    <div style="height: inherit" class={cn("flex items-center overflow-hidden", j !== (person.links ?? []).length - 1 && '-b')}>
                                         <div
                                                 style="height: inherit;"
-                                                class="w-full md:w-[35%] md:min-w-[35%] border-l text-left">
+                                                class="w-full md:w-[35%] md:min-w-[35%] -l text-left">
 
                                             <Button
                                                     style="height: inherit;"
@@ -208,7 +208,7 @@
                                             </Button>
                                         </div>
 
-                                        <div class="flex-grow h-full border-l hidden md:block overflow-ellipsis">
+                                        <div class="flex-grow h-full -l hidden md:block overflow-ellipsis">
                                             <Button
                                                     class="hidden md:flex items-center justify-start w-full p-2 px-2 text-xs text-muted-foreground light:hover:bg-primary dark:hover:bg-primary hover:text-black rounded-none"
                                                     variant="ghost"
@@ -228,16 +228,16 @@
 
         {#if props.links ?? 0 > 0}
             <div class="h-6 min-h-6"></div>
-            <div class='w-full h-full flex justify-between items-center border-t bg-muted/25'>
+            <div class='w-full h-full flex justify-between items-center -t bg-muted/25'>
                 <h2 class='font-bold text-2xl p-2'>
                     Links
                 </h2>
             </div>
 
-            <div class="flex flex-col border-b">
+            <div class="flex flex-col -b">
                 {#each props.links ?? [] as link, i }
-                    <div class=" border-t flex h-[4rem] md:h-10 items-center overflow-hidden">
-                        <p class="md:w-10 md:min-w-10 w-[4rem] min-w-[4rem] border-r flex items-center justify-center text-muted-foreground font-bold h-[4rem] md:h-10">
+                    <div class=" -t flex h-[4rem] md:h-10 items-center overflow-hidden">
+                        <p class="md:w-10 md:min-w-10 w-[4rem] min-w-[4rem] -r flex items-center justify-center text-muted-foreground font-bold h-[4rem] md:h-10">
                             {i + 1}
                         </p>
 
@@ -249,7 +249,7 @@
                         </Button>
 
                         <Button
-                                class="hidden md:flex items-center justify-start w-1/2 h-full p-2 px-2 text-xs text-muted-foreground border-l whitespace-nowrap light:hover:bg-primary dark:hover:bg-primary hover:text-black rounded-none"
+                                class="hidden md:flex items-center justify-start w-1/2 h-full p-2 px-2 text-xs text-muted-foreground -l whitespace-nowrap light:hover:bg-primary dark:hover:bg-primary hover:text-black rounded-none"
                                 variant="ghost"
                                 href={link.url}
                         >
@@ -261,11 +261,11 @@
         {/if}
 
         <div class="h-6 min-h-6"></div>
-        <div class='w-full h-full flex justify-between items-center border-y bg-muted/25'>
+        <div class='w-full h-full flex justify-between items-center -y bg-muted/25'>
             <h2 class='font-bold text-2xl p-2'>
                 Read More
             </h2>
-            <div class="hidden sm:flex align-middle items-center gap-x-3 text-sm text-muted-foreground border-l self-stretch">
+            <div class="hidden sm:flex align-middle items-center gap-x-3 text-sm text-muted-foreground -l self-stretch">
                 <h3 class="text-center w-[8rem] font-bold">
                     Date Published
                 </h3>
@@ -288,7 +288,7 @@
             </style>
 
             {#each randomPosts as post, i}
-                <span class={cn('w-full post-small flex-grow transition duration-200 hover:bg-gray-100 hover:text-black', i !== RecentPosts.length - 1 && 'border-b')}>
+                <span class={cn('w-full post-small flex-grow transition duration-200 hover:bg-gray-100 hover:text-black', i !== RecentPosts.length - 1 && '-b')}>
                     <SmallCard {...post}/>
                 </span>
             {/each}
@@ -296,7 +296,7 @@
 
         <div class="h-6 min-h-6"></div>
 
-        <div class='w-full flex justify-between items-center border-y bg-muted/25'>
+        <div class='w-full flex justify-between items-center -y bg-muted/25'>
             <h2 class='font-bold text-2xl p-2'>
                 Want to chat about this post or anything else?
             </h2>
