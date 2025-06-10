@@ -1,9 +1,7 @@
 const RANDOM_TITLES: Array<string> = [
-    '- Software Engineer',
-    '- Building things',
 ];
 
-const TITLE = 'Grzegorz Maniak';
+const TITLE = 'Adrian Donnelly';
 
 const random_title = () => {
     return TITLE + ' ' + RANDOM_TITLES[Math.floor(Math.random() * RANDOM_TITLES.length)];

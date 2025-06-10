@@ -38,36 +38,36 @@
 	const publishedDate = props.date.toISOString();
 	const modifiedDate = props.dateModified?.toISOString() ?? publishedDate;
 	const id = props.id;
-	const cover = props.cover ?? 'https://grzegorz.ie/logo.png';
-	const title = props.title ?? 'Grzegorz Maniak';
+	const cover = props.cover ?? 'https://adriandonnelly.me//logo.png';
+	const title = props.title ?? 'Adrian Donnelly';
 
 	const tagOpen = `<script type="application/ld+json">`;
 	const tagClose = `<\/script>`;
 </script>
 
 <svelte:head>
-    <title>{props.title} - Grzegorz Maniak</title>
+    <title>{props.title} - Adrian Donnelly</title>
     <meta name="description" content={postDescription} />
     <meta name="keywords" content={prettyTags} />
 
     <meta name="googlebot-news" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
     <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
-    <link rel="canonical" href="https://grzegorz.ie/post/{props.id}" />
+    <link rel="canonical" href="https://adriandonnelly.me//post/{props.id}" />
 
-    <meta property="og:title" content="{props.title} - Grzegorz Maniak" />
+    <meta property="og:title" content="{props.title} - Adrian Donnelly" />
     <meta property="og:description" content={postDescription} />
     <meta property="og:type" content="article" />
     <meta property="og:image" content={props.cover} />
-    <meta property="og:url" content="https://grzegorz.ie/post/{props.id}" />
-    <meta property="og:site_name" content="Grzegorz Maniak" />
+    <meta property="og:url" content="https://adriandonnelly.me//post/{props.id}" />
+    <meta property="og:site_name" content="Adrian Donnelly" />
 
     {#if publishedDate} <meta property="article:published_time" content={publishedDate} /> {/if}
     {#if modifiedDate} <meta property="article:modified_time" content={modifiedDate} /> {/if}
     {#each allTags as tag} <meta property="article:tag" content={tag} /> {/each}
 
-    <meta property="article:author" content="Grzegorz Maniak" />
+    <meta property="article:author" content="Adrian Donnelly" />
     <meta name="twitter:card" content="summary_large_image" />
-    <meta name="twitter:title" content="{props.title} - Grzegorz Maniak" />
+    <meta name="twitter:title" content="{props.title} - Adrian Donnelly" />
     <meta name="twitter:description" content={postDescription} />
     <meta name="twitter:image" content={props.cover} /> <link rel="icon" href="/favicon.ico" type="image/x-icon" />
 
@@ -79,23 +79,23 @@
         "image": cover,
         "author": {
             "@type": "Person",
-            "name": "Grzegorz Maniak",
-            "url": "https://grzegorz.ie/about"
+            "name": "Adrian Donnelly",
+            "url": "https://adriandonnelly.me//about"
         },
         "publisher": {
             "@type": "Person",
-            "name": "Grzegorz Maniak",
+            "name": "Adrian Donnelly",
             "logo": {
                 "@type": "ImageObject",
-                "url": "https://grzegorz.ie/logo.png"
+                "url": "https://adriandonnelly.me//logo.png"
             }
         },
-        "url": `https://grzegorz.ie/post/${id}`,
+        "url": `https://adriandonnelly.me//post/${id}`,
         "datePublished": publishedDate,
         "dateModified": modifiedDate,
         "mainEntityOfPage": {
             "@type": "WebPage",
-            "@id": `https://grzegorz.ie/post/${id}`
+            "@id": `https://adriandonnelly.me//post/${id}`
         }
     }) + tagClose}
 </svelte:head>
@@ -113,7 +113,7 @@
 
         <div class="flex justify-center">
             <a
-                href={`https://www.twitter.com/intent/tweet?text=Check out this post on Grzegorz Maniak's blog: ${props.title}&url=https://grzegorz.ie/post/${props.id}`}
+                href={`https://www.twitter.com/intent/tweet?text=Check out this post on Adrian Donnelly's blog: ${props.title}&url=https://adriandonnelly.me//post/${props.id}`}
                 target="_blank"
                 rel="noopener noreferrer"
                 class="text-gray-400 border-x p-3 light:hover:bg-primary dark:hover:bg-primary hover:text-black"
@@ -124,7 +124,7 @@
             </a>
 
             <a
-                href={`https://www.linkedin.com/shareArticle?mini=true&title=${props.title}&summary=${props.body}&url=https://grzegorz.ie/post/${props.id}`}
+                href={`https://www.linkedin.com/shareArticle?mini=true&title=${props.title}&summary=${props.body}&url=https://adriandonnelly.me//post/${props.id}`}
                 target="_blank"
                 rel="noopener noreferrer"
                 class="text-gray-400 border-r p-3 light:hover:bg-primary dark:hover:bg-primary hover:text-black"
@@ -135,7 +135,7 @@
             </a>
 
             <a
-                href={`mailto:?subject=${props.title}&body=Check out this post on Grzegorz Maniak's blog: https://grzegorz.ie/post/${props.id}`}
+                href={`mailto:?subject=${props.title}&body=Check out this post on Adrian Donnelly's blog: https://adriandonnelly.me//post/${props.id}`}
                 target="_blank"
                 rel="noopener noreferrer"
                 class="text-gray-400 border-r p-3 light:hover:bg-primary dark:hover:bg-primary hover:text-black"
@@ -146,7 +146,7 @@
             </a>
 
             <a
-                on:click={() => navigator.clipboard.writeText(`https://grzegorz.ie/post/${props.id}`)}
+                on:click={() => navigator.clipboard.writeText(`https://adriandonnelly.me//post/${props.id}`)}
                 href="#"
                 class="text-gray-400 border-r p-3 light:hover:bg-primary dark:hover:bg-primary hover:text-black"
                 aria-label="Copy Link"

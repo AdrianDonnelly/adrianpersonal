@@ -31,7 +31,7 @@
             p-4
         ">
             <div class="flex flex-col gap-0 items-center sm:items-start w-full">
-                <h1 class="text-2xl font-bold">Grzegorz Maniak</h1>
+                <h1 class="text-2xl font-bold">Adrian Donnelly</h1>
                 <p>Software Engineer 🇮🇪 🇵🇱</p>
             </div>
 

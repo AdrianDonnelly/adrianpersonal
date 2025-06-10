@@ -7,19 +7,19 @@
 
     const posts = Posts.map((post: PostData) => {
         return {
-            loc: `https://grzegorz.ie/post/${post.id}`,
+            loc: `https://adriandonnelly.me//post/${post.id}`,
             lastmod: post.date.toISOString().split('T')[0]
         };
     });
 
     const otherPages: SitemapEntry[] = [
-        { loc: "https://grzegorz.ie", lastmod: "2024-10-11" },
-        { loc: "https://grzegorz.ie/cv", lastmod: "2024-10-11" },
-        { loc: "https://grzegorz.ie/blog", lastmod: "2024-10-11" },
-        { loc: "https://grzegorz.ie/about", lastmod: "2024-10-11" },
-        { loc: "https://grzegorz.ie/contact", lastmod: "2024-10-11" },
-        { loc: "https://grzegorz.ie/projects", lastmod: "2024-10-11" },
-        { loc: "https://grzegorz.ie/sitemap.xml", lastmod: "2024-10-11" }
+        { loc: "https://adriandonnelly.me/", lastmod: "2024-10-11" },
+        { loc: "https://adriandonnelly.me//cv", lastmod: "2024-10-11" },
+        { loc: "https://adriandonnelly.me//blog", lastmod: "2024-10-11" },
+        { loc: "https://adriandonnelly.me//about", lastmod: "2024-10-11" },
+        { loc: "https://adriandonnelly.me//contact", lastmod: "2024-10-11" },
+        { loc: "https://adriandonnelly.me//projects", lastmod: "2024-10-11" },
+        { loc: "https://adriandonnelly.me//sitemap.xml", lastmod: "2024-10-11" }
     ];
 
     const sitemap = [...posts, ...otherPages];
@@ -33,7 +33,7 @@
         xmlns:video="https://www.google.com/schemas/sitemap-video/1.1"
 >
     <url>
-        <loc>https://grzegorz.ie</loc>
+        <loc>https://adriandonnelly.me/</loc>
         <changefreq>daily</changefreq>
         <priority>0.5</priority>
     </url>
