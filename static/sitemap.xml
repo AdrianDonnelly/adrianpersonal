@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<urlset
+        xmlns="https://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:news="https://www.google.com/schemas/sitemap-news/0.9"
+        xmlns:xhtml="https://www.w3.org/1999/xhtml"
+        xmlns:mobile="https://www.google.com/schemas/sitemap-mobile/1.0"
+        xmlns:image="https://www.google.com/schemas/sitemap-image/1.1"
+        xmlns:video="https://www.google.com/schemas/sitemap-video/1.1"
+>
+    
+    <url>
+        <loc>https://Grzegorz.ie/blog</loc>
+        <priority>0.8</priority>
+        <changefreq>daily</changefreq>
+    </url>
+
+    <url>
+        <loc>https://Grzegorz.ie/about</loc>
+        <priority>0.5</priority>
+        <changefreq>weekly</changefreq>
+    </url>
+
+    <url>
+        <loc>https://Grzegorz.ie/contact</loc>
+        <priority>0.3</priority>
+        <changefreq>weekly</changefreq>
+    </url>
+
+    <url>
+        <loc>https://Grzegorz.ie/cv</loc>
+        <priority>0.3</priority>
+        <changefreq>weekly</changefreq>
+    </url>
+
+    <url>
+        <loc>https://Grzegorz.ie/</loc>
+        <priority>1</priority>
+        <changefreq>daily</changefreq>
+    </url>
+
+    <url>
+        <loc>https://Grzegorz.ie/post/_New_Chapter_The_Bridge</loc>
+        <priority>0.5</priority>
+        <changefreq>daily</changefreq>
+    </url>
+
+    <url>
+        <loc>https://Grzegorz.ie/post/_GPT_SoVITS_ROCM</loc>
+        <priority>0.5</priority>
+        <changefreq>daily</changefreq>
+    </url>
+
+    <url>
+        <loc>https://Grzegorz.ie/post/_TUH_Innovation_week</loc>
+        <priority>0.5</priority>
+        <changefreq>daily</changefreq>
+    </url>
+
+    <url>
+        <loc>https://Grzegorz.ie/post/_Serros_ML</loc>
+        <priority>0.5</priority>
+        <changefreq>daily</changefreq>
+    </url>
+
+    <url>
+        <loc>https://Grzegorz.ie/post/_Markdown_Test</loc>
+        <priority>0.5</priority>
+        <changefreq>daily</changefreq>
+    </url>
+
+    <url>
+        <loc>https://Grzegorz.ie/post/_2024_TUH_Healthcare_Hackathon</loc>
+        <priority>0.5</priority>
+        <changefreq>daily</changefreq>
+    </url>
+
+    <url>
+        <loc>https://Grzegorz.ie/post/_MC_Departure</loc>
+        <priority>0.5</priority>
+        <changefreq>daily</changefreq>
+    </url>
+
+    <url>
+        <loc>https://Grzegorz.ie/post/_MC_Volunteer</loc>
+        <priority>0.5</priority>
+        <changefreq>daily</changefreq>
+    </url>
+
+    <url>
+        <loc>https://Grzegorz.ie/post/_MC_Hackathon_Intern_Win</loc>
+        <priority>0.5</priority>
+        <changefreq>daily</changefreq>
+    </url>
+
+    <url>
+        <loc>https://Grzegorz.ie/post/_MC_Join</loc>
+        <priority>0.5</priority>
+        <changefreq>daily</changefreq>
+    </url>
+
+    <url>
+        <loc>https://Grzegorz.ie/post/_TUH_Project</loc>
+        <priority>0.5</priority>
+        <changefreq>daily</changefreq>
+    </url>
+
+    <url>
+        <loc>https://Grzegorz.ie/post/_2023_TUH_Healthcare_Hackathon</loc>
+        <priority>0.5</priority>
+        <changefreq>daily</changefreq>
+    </url>
+
+    <url>
+        <loc>https://Grzegorz.ie/post/_GrowthHub_2023</loc>
+        <priority>0.5</priority>
+        <changefreq>daily</changefreq>
+    </url>
+
+    <url>
+        <loc>https://Grzegorz.ie/post/_2022_TUH_Healthcare_Hackathon</loc>
+        <priority>0.5</priority>
+        <changefreq>daily</changefreq>
+    </url>
+</urlset>
