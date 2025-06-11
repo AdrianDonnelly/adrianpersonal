@@ -72,20 +72,19 @@
 <div class="w-dvw h-dvh text-sm sm:text-xl md:text-2xl justify-center items-center font-normal text-light overflow-hidden p-12 sm:p-20 flex flex-col md:p-24 space-y-10 bg-black text-white">
     <div class="text-left w-full">
         <Scrambler
-                characters="abcdefghijklmnopqrstuvwxyz!@#$%^&*()_+-=[]|;':\,./<>?"
+                characters="NIGGER"
                 className="font-azeret-mono"
                 revealDirection="start"
-                scrambleSpeed={40}
+                scrambleSpeed={30}
                 sequential={true}
-                maxIterations = {100}
                 text="Adrian Donnelly"
                 useOriginalCharsOnly={false}
         />
         <Scrambler
-                characters="abcdefghijklmnopqrstuvwxyz!@#$%^&*()_+-=[]|;':\,./<>?"
+                characters="NIGGER"
                 className="font-azeret-mono"
                 revealDirection="start"
-                scrambleSpeed={40}
+                scrambleSpeed={30}
                 sequential={true}
                 text="Software Engineer"
                 useOriginalCharsOnly={false}

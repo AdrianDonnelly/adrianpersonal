@@ -98,12 +98,6 @@
 
         {#if needsTruncation}
             <div class="mt-auto text-right w-full flex justify-end">
-                <Button
-                        href={`/post/${id}`}
-                        class='p-7 border-l border-t rounded-none light:hover:bg-primary dark:hover:bg-primary hover:text-black'
-                        variant="ghost">
-                    Read More &rarr;
-                </Button>
             </div>
         {/if}
     </div>
