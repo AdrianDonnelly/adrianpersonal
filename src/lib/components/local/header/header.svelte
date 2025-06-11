@@ -11,22 +11,33 @@
         <h1 class="scroll-m-20 text-2xl font-extrabold tracking-tight w-full">Adrian Donnelly</h1>
 
         <Separator class="my-4"/>
+        <div class="flex flex-wrap items-center justify-between">
+            <div class="flex flex-row gap-3 text-muted-foreground mb-3">
+                <h1 class="scroll-m-20 text-l font-semibold tracking-tight hover:text-white duration-200"><a
+                        href="https://www.linkedin.com/in/adrdonnelly/">LinkedIn</a></h1>
+                <Separator orientation="vertical"/>
 
-        <div class="flex flex-row gap-3 text-muted-foreground mb-3">
-            <h1 class="scroll-m-20 text-l font-semibold tracking-tight hover:text-white duration-200"><a
-                    href="https://www.linkedin.com/in/adrdonnelly/">LinkedIn</a></h1>
-            <Separator orientation="vertical"/>
+                <h1 class="scroll-m-20 text-l font-semibold tracking-tight hover:text-white duration-200"><a
+                        href="mailto:adrian.donnelly15@outlook.com">Email</a></h1>
+                <Separator orientation="vertical"/>
 
-            <h1 class="scroll-m-20 text-l font-semibold tracking-tight hover:text-white duration-200"><a
-                    href="mailto:adrian.donnelly15@outlook.com">Email</a></h1>
-            <Separator orientation="vertical"/>
+                <h1 class="scroll-m-20 text-l font-semibold tracking-tight hover:text-white duration-200"><a
+                        href="https://github.com/AdrianDonnelly">Github</a></h1>
+            </div>
+            <div class="flex flex-row gap-3 text-muted-foreground mb-3">
+                <h1 class="scroll-m-20 text-l font-semibold tracking-tight hover:text-white duration-200"><a
+                        href="/blog">Blog</a></h1>
+                <Separator orientation="vertical"/>
+                <h1 class="scroll-m-20 text-l font-semibold tracking-tight hover:text-white duration-200"><a
+                        href="/projects">Projects</a></h1>
+                <Separator orientation="vertical"/>
+                <h1 class="scroll-m-20 text-l font-semibold tracking-tight hover:text-white duration-200"><a
+                        href="/about">About</a></h1>
+                <Separator orientation="vertical"/>
+                <h1 class="scroll-m-20 text-l font-semibold tracking-tight hover:text-white duration-200"><a
+                        href="/cv">CV</a></h1>
 
-            <h1 class="scroll-m-20 text-l font-semibold tracking-tight hover:text-white duration-200"><a
-                    href="https://github.com/AdrianDonnelly">Github</a></h1>
-            <Separator orientation="vertical"/>
-
-            <h1 class="scroll-m-20 text-l font-semibold tracking-tight hover:text-white duration-200"><a
-                    href="https://github.com/AdrianDonnelly">Blog</a></h1>
+            </div>
         </div>
     </div>
 </nav>

@@ -75,7 +75,7 @@
                 characters="NIGGER"
                 className="font-azeret-mono"
                 revealDirection="start"
-                scrambleSpeed={30}
+                scrambleSpeed={50}
                 sequential={true}
                 text="Adrian Donnelly"
                 useOriginalCharsOnly={false}
@@ -84,7 +84,7 @@
                 characters="NIGGER"
                 className="font-azeret-mono"
                 revealDirection="start"
-                scrambleSpeed={30}
+                scrambleSpeed={50}
                 sequential={true}
                 text="Software Engineer"
                 useOriginalCharsOnly={false}
@@ -116,7 +116,7 @@
 
     <div class='w-full h-full flex justify-between items-center -b bg-muted/25'>
         <h2 class='font-bold text-2xl p-2'>
-            What have I been up to?
+            Achievements
         </h2>
     </div>
 

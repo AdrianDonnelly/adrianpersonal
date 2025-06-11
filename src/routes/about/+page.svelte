@@ -310,7 +310,7 @@
     <div class="h-6 border-t min-h-6"></div>
     <div class='w-full h-full flex justify-between items-center border-y bg-muted/25'>
         <h2 class='font-bold text-2xl p-2'>
-            What have I been up to?
+            Achievements
         </h2>
     </div>
 
@@ -373,3 +373,4 @@
             Want to chat?
         </h2>
     </div>
+</div>
