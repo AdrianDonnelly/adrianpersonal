@@ -106,48 +106,35 @@
         ]}
 />
 
-<div class='flex flex-col w-full  mx-auto min-h-[95vh] border-x border-b'>
-    <div class='w-full flex justify-between items-center h-[5rem] border-b'>
+<div class='flex flex-col p-10 max-w-300 w-full  mx-auto min-h-[95vh]'>
+    <div class='w-full flex justify-between items-center h-[5rem] '>
         <h2 class='font-bold text-2xl p-2'>
             Blog
         </h2>
     </div>
 
     <div class='flex flex-col'>
-        <Grid
-                rows={4}
-                columns={12}
-                smallColumns={8}
-                smallRows={4}
-                class="w-full h-full border-b"
-                cellClass="hover:bg-primary dark:hover:bg-primary transition-color duration-500"
-        >
-            <div class="border-r border-b h-full p-2 flex flex-col items-center justify-center gap-1 bg-[#09090b]">
+            <div class="h-full p-2 flex flex-col items-center justify-center gap-1 bg-[#09090b]">
                 <h2 class='font-bold text-2xl '>
                     Search
                 </h2>
-                <p class='text-muted-foreground m-0 hidden md:block md:gap-2'>
-                    Search for posts by title, content, tags, years, or authors.
-                </p>
                 <Input
                         bind:value={search}
                         oninput={() => debouncedExecuteSearch(search)}
                         type="text"
-                        class="rounded-none border-0 bg-muted/25"
+                        class="rounded-none bg-muted/25 max-w-xl"
                         id="search-input"
                         placeholder="Search for posts..."/>
             </div>
-        </Grid>
     </div>
 
 
     <div class="h-6  min-h-6"></div>
-    <div class='w-full flex justify-between items-center border-y bg-muted/25 h-[5rem]'>
+    <div class='w-full flex justify-between items-center h-[5rem]'>
         <h2 class='font-bold text-2xl p-2'>
             {#if archive}
                 Archive {archiveYear}
             {:else}
-                Posts
             {/if}
         </h2>
 
