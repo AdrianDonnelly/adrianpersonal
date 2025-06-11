@@ -101,7 +101,7 @@
 </svelte:head>
 
 <div class={cn(className, 'w-screen flex justify-center items-center ')}>
-    <div class='max-w-screen-lg w-full h-full flex flex-col align-top -x'>
+    <div class='w-full h-full flex flex-col align-top -x'>
         <Post {...props}/>
 
         <div class="h-6 -t min-h-6"></div>
@@ -296,20 +296,5 @@
 
         <div class="h-6 min-h-6"></div>
 
-        <div class='w-full flex justify-between items-center -y bg-muted/25'>
-            <h2 class='font-bold text-2xl p-2'>
-                Want to chat about this post or anything else?
-            </h2>
-        </div>
-
-        <InfoCard
-                title="Schedule a Call!"
-                buttonLink="https://calendly.com/gregamaniak/30min"
-                buttonText="Schedule a Call"
-                imgSrc="/assets/callendly.png"
-                imgAlt="Calendly Logo"
-                description="Schedule a call with me trough Calendly. I am more than happy to discuss anything from software development, startups, to personal projects and basically anything else you might want to talk about."/>
-
     </div>
-
 </div>

@@ -5,10 +5,10 @@
 <div class="w-screen mt-[10rem] relative">
 
     <div class="
-        flex flex-col w-full max-w-screen-lg mx-auto p1-t p1-x
+        flex flex-col w-full mx-auto p1-t p1-x
     ">
 
-        <div class="flex flex-col gap-5 p1-b bg-muted/25 items-center">
+        <div class="flex flex-col gap-5 p1-b items-center">
             <div class="text-sm flex">
                 <a href="mailto:adrian.donnelly15@outlook.com" class="text-primary p-4 p1-l text-center">
                     Email
@@ -32,7 +32,7 @@
         ">
             <div class="flex flex-col gap-0 items-center sm:items-start w-full">
                 <h1 class="text-2xl font-bold">Adrian Donnelly</h1>
-                <p>Software Engineer 🇮🇪 🇵🇱</p>
+                <p>Software Engineer</p>
             </div>
 
             <div class="flex gap-4 justify-center sm:items-end w-full sm:w-min">
@@ -45,7 +45,7 @@
         </div>
 
         <div class="w-full ">
-            <p class="text-sm text-muted-foreground text-center w-full mb-2">© 2025 Grzegorz Maniak</p>
+            <p class="text-sm text-muted-foreground text-center w-full mb-2">© 2025 Adrian Donnelly</p>
         </div>
     </div>
 </div>

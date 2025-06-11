@@ -106,8 +106,8 @@
         ]}
 />
 
-<div class='flex flex-col w-full max-w-screen-lg mx-auto min-h-[95vh] border-x border-b'>
-    <div class='w-full flex justify-between items-center  bg-muted/25 h-[5rem] border-b'>
+<div class='flex flex-col w-full  mx-auto min-h-[95vh] border-x border-b'>
+    <div class='w-full flex justify-between items-center h-[5rem] border-b'>
         <h2 class='font-bold text-2xl p-2'>
             Blog
         </h2>

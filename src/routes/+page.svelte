@@ -1,23 +1,21 @@
 <script lang='ts'>
-    import { FeaturedPosts, PostYears, RecentPosts, Posts } from '$lib/posts';
-    import { BigCard, SmallCard } from "$local/post";
-    import { Button } from "$shadcn/button";
-    import { CustomHead } from "$local/head";
-    import { cn } from "$lib/utils";
-    import * as Card from "$shadcn/card";
-    import { InfoCard } from "$local/infoCard/index.js";
-    import { Separator } from "$lib/components/ui/separator";
+    import {FeaturedPosts, RecentPosts} from '$lib/posts';
+    import {BigCard, SmallCard} from "$local/post";
+    import {CustomHead} from "$local/head";
+    import {cn} from "$lib/utils";
+    import {InfoCard} from "$local/infoCard/index.js";
+    import {Scrambler} from "$lib/components/ui/text"
 
     // You might need to adjust the paths for these components if they are different in your project.
 
     // Define breadCrumbs dynamically within the <script> block
     let breadCrumbs = [
-        { name: "Home", url: "https://adriandonnelly.me/" },
-        { name: "About", url: "https://adriandonnelly.me/about" },
-        { name: "Contact", url: "https://adriandonnelly.me/contact" },
-        { name: "Blog", url: "https://adriandonnelly.me/blog" },
-        { name: "Projects", url: "https://adriandonnelly.me/projects" },
-        { name: "Resume", url: "https://adriandonnelly.me/cv" },
+        {name: "Home", url: "https://adriandonnelly.me/"},
+        {name: "About", url: "https://adriandonnelly.me/about"},
+        {name: "Contact", url: "https://adriandonnelly.me/contact"},
+        {name: "Blog", url: "https://adriandonnelly.me/blog"},
+        {name: "Projects", url: "https://adriandonnelly.me/projects"},
+        {name: "Resume", url: "https://adriandonnelly.me/cv"},
     ];
 
     // Conditionally add RecentPosts to breadCrumbs
@@ -34,9 +32,7 @@
 
 <svelte:head>
     <title>Adrian Donnelly</title>
-    <link href="https://assets.calendly.com/assets/external/widget.css" rel="stylesheet">
-    <script src="https://assets.calendly.com/assets/external/widget.js" type="text/javascript" async></script>
-</svelte:head>
+  </svelte:head>
 <CustomHead
         {breadCrumbs}
 />
@@ -66,14 +62,40 @@
         background-color: inherit;
         color: black !important; /* Ensure text color becomes black on hover */
     }
+
     .post-small:hover .read-more {
         background-color: rgb(243 244 246 / var(--tw-bg-opacity)); /* Tailwind gray-100 */
     }
 </style>
 
-<div class='flex flex-col w-full max-w-screen-lg mx-auto -x'>
 
-    <div class='w-full h-full flex justify-between items-center bg-muted/25'>
+<div class="w-dvw h-dvh text-sm sm:text-xl md:text-2xl justify-center items-center font-normal text-light overflow-hidden p-12 sm:p-20 flex flex-col md:p-24 space-y-10 bg-black text-white">
+    <div class="text-left w-full">
+        <Scrambler
+                characters="abcdefghijklmnopqrstuvwxyz!@#$%^&*()_+-=[]|;':\,./<>?"
+                className="font-azeret-mono"
+                revealDirection="start"
+                scrambleSpeed={40}
+                sequential={true}
+                maxIterations = {100}
+                text="Adrian Donnelly"
+                useOriginalCharsOnly={false}
+        />
+        <Scrambler
+                characters="abcdefghijklmnopqrstuvwxyz!@#$%^&*()_+-=[]|;':\,./<>?"
+                className="font-azeret-mono"
+                revealDirection="start"
+                scrambleSpeed={40}
+                sequential={true}
+                text="Software Engineer"
+                useOriginalCharsOnly={false}
+        />
+    </div>
+</div>
+
+<div class='flex flex-col w-full  mx-auto -x'>
+
+    <div class='w-full h-full flex justify-between items-center'>
         <h2 class='font-bold text-2xl p-2'>
             Featured Posts
         </h2>
@@ -109,12 +131,12 @@
     </div>
 
     <InfoCard
-            buttonText="Learn More"
             buttonLink="/post/my-entrepreneurial-journey"
-            imgSrc="/assets/ef.png"
-            imgAlt="Entrepreneurial Journey"
-            title="Launching a New Venture"
+            buttonText="Learn More"
             description="Actively exploring and building new projects in the startup space, leveraging my software development background to bring innovative ideas to life."
+            imgAlt="Entrepreneurial Journey"
+            imgSrc="/assets/ef.png"
+            title="Launching a New Venture"
     />
 
     <div class=" -b flex h-10 items-center">
@@ -126,13 +148,13 @@
         </p>
     </div>
     <InfoCard
-            buttonText="View Transcript"
             buttonLink="/cv"
-            imgSrc="/assets/tud.png"
+            buttonText="View Transcript"
+            description="Successfully completed a comprehensive program in Computing with Software Development, focusing on modern software engineering principles and practices."
             imgAlt="TU Dublin"
+            imgSrc="/assets/tud.png"
             note="Achieved a First Class Honours degree."
             title="Graduated from Technological University Dublin"
-            description="Successfully completed a comprehensive program in Computing with Software Development, focusing on modern software engineering principles and practices."
     />
 
     <div class=" -b flex h-10 items-center">
@@ -145,17 +167,17 @@
     </div>
 
     <InfoCard
-            buttonText="Read about it"
             buttonLink="/post/mastercard-experience"
-            imgSrc="/assets/mc.png"
-            imgAlt="Mastercard"
-            title="Software Engineer at Mastercard"
+            buttonText="Read about it"
             description="Gained valuable experience working on high-performance Java and TypeScript microservices within Mastercard's MPGS team, contributing to critical payment solutions."
+            imgAlt="Mastercard"
+            imgSrc="/assets/mc.png"
+            title="Software Engineer at Mastercard"
     />
 
     <div class="h-6 min-h-6"></div>
 
-    <div class='w-full h-full flex justify-between items-center -y bg-muted/25'>
+    <div class='w-full h-full flex justify-between items-center -y'>
         <h2 class='font-bold text-2xl p-2'>
             Recent Posts
         </h2>

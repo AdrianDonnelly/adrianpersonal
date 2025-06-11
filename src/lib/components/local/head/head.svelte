@@ -2,7 +2,7 @@
 	const {
 		image = "https://adriandonnelly.me/assets/meta_about.png",
         title = "Adrian Donnelly — Software Engineer",
-        description = "Hey, I’m Greg, Computing with Software Development grad from TU Dublin. I’m into building secure, scalable systems with privacy baked in. Always happy to chat.",
+        description = "Hey, Im Adrian.",
         breadCrumbs = [
             { name: "Home", url: "https://adriandonnelly.me/" },
             { name: "About", url: "https://adriandonnelly.me/about" },

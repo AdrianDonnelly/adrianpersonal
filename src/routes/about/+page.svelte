@@ -211,7 +211,7 @@
 </div>
 
 
-<div class='flex flex-col w-full max-w-screen-lg mx-auto border-x border-t '>
+<div class='flex flex-col w-full  mx-auto border-x border-t '>
     <div class='flex flex-col'>
         <Grid
                 rows={4}
@@ -373,13 +373,3 @@
             Want to chat?
         </h2>
     </div>
-
-    <InfoCard
-            title="Schedule a Call!"
-            buttonText="Schedule a Call"
-            buttonLink="https://calendly.com/gregamaniak/30min"
-            imgSrc="/assets/callendly.png"
-            imgAlt="Calendly Logo"
-            description="Schedule a call with me trough Calendly. I am more than happy to discuss anything from software development, startups, to personal projects and basically anything else you might want to talk about."/>
-
-</div>

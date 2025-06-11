@@ -6,7 +6,7 @@
     <title>Adrian Donnelly</title>
 </svelte:head>
 
-<nav class="flex flex-col w-full max-w-screen-lg mx-auto -x">
+<nav class="flex flex-col w-full mx-auto -x">
     <div class="text-white mt-4 ml-6 mr-6">
         <h1 class="scroll-m-20 text-2xl font-extrabold tracking-tight w-full">Adrian Donnelly</h1>
 
