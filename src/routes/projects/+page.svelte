@@ -12,72 +12,21 @@
     import {cn} from "$lib/utils";
 	import {Project} from "$local/project/index.js";
 </script>
-
-<CustomHead
-    description="
-    I like to build things. Not everything is worth sharing, but every project teaches me something. I enjoy building things that are useful, fun, interesting, or that just make life easier.
-"/>
-
 <div class='
     flex
     flex-col
     w-full
     max-w-screen-lg
     mx-auto
-    border-x
 '>
-    <div class='w-full flex justify-between items-center  bg-muted/25 h-[5rem] border-b'>
+    <div class='w-full flex justify-between items-center  bg-muted/25 h-[5rem] '>
         <h2 class='font-bold text-2xl p-2'>
             Projects
         </h2>
     </div>
 
-
-    <div class='flex flex-col'>
-        <Grid
-                rows={4}
-                smallRows={4}
-                columns={12}
-                smallColumns={8}
-                class="w-full h-full border-b"
-                cellClass="hover:bg-primary dark:hover:bg-primary transition-color duration-500"
-        >
-            <div class="border-r border-b h-full p-2 flex flex-col items-center justify-center bg-[#09090b]">
-                <h2 class='font-bold text-2xl '>
-                    I like to build things
-                </h2>
-                <p class='text-muted-foreground m-0 p-2 text-sm hidden md:block'>
-                    In fact, I build a lot of things. Not everything is worth sharing, but every project teaches me something. I enjoy building things that are useful, fun, interesting, or that just make life easier.
-                </p>
-            </div>
-        </Grid>
-    </div>
-
-    <div class="flex items-center justify-start h-[9rem] md:h-[7rem] max-h-[9rem] md:max-h-[7rem] overflow-hidden border-b">
-        <p class="p-2 border-r flex items-center justify-center bg-white font-black text-background text-[8rem]" style="height: inherit">
-            !
-        </p>
-
-        <p class='text-white p-2 px-4 flex flex-col items-start gap-1 flex-grow leading-tight'>
-            <span class="font-bold">
-                Before we get started
-            </span>
-            This is not a complete list of my projects, just the ones I was bothered to write about.
-            If you want to see more, check out my GitHub
-        </p>
-
-        <Button
-                class="hidden md:flex rounded-none hover:bg-primary dark:hover:bg-primary border-l hover:text-black w-[10rem] min-w-[10rem] h-[7rem] items-center justify-center bg-background"
-                variant="ghost" href="https://git.grzegorz.ie"
-                target="_blank"
-                rel="noopener noreferrer"
-        >
-            GitHub
-        </Button>
-    </div>
-
     <Button
-            class="flex md:hidden rounded-none hover:bg-primary dark:hover:bg-primary border-b hover:text-black w-full h-[3rem] items-center justify-center bg-background"
+            class="flex md:hidden rounded-none hover:bg-primary dark:hover:bg-primary  hover:text-black w-full h-[3rem] items-center justify-center bg-background"
             variant="ghost" href="https://git.grzegorz.ie"
             target="_blank"
             rel="noopener noreferrer"

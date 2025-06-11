@@ -179,11 +179,11 @@
     }
 </style>
 
-<article class={cn("w-full flex flex-col", className)} {id} data-tags={tags.join(', ')}>
+<article class={cn("w-full flex flex-col ", className)} {id} data-tags={tags.join(', ')}>
     <div class='flex flex-col'>
     </div>
 
-    <header class="w-full flex flex-col">
+    <header class="w-full flex flex-col ">
         <div class='flex flex-col gap-5 -b bg-muted/25 items-center'>
             <div class="text-sm flex">
                 <time dateTime={date.toISOString()} class={cn(

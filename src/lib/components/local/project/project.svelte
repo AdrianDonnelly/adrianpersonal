@@ -26,8 +26,8 @@
 	}>();
 </script>
 
-<div class="border-b flex h-10 items-center">
-    <p class="w-10 h-10 border-r flex items-center justify-center text-muted-foreground font-bold">
+<div class="flex h-10 items-center">
+    <p class="w-10 h-10 flex items-center justify-center text-muted-foreground font-bold">
         {index}
     </p>
     <p class="p-2 text-sm text-muted-foreground">
@@ -35,7 +35,7 @@
     </p>
 </div>
 
-<Card.Root class="border-0 rounded-none md:border-b py-0 bg-transparent">
+<Card.Root class="border-0 rounded-none py-0 bg-transparent">
     <Card.Content class="p-0 text-white flex flex-col">
         <div class="flex flex-col md:flex-row w-full">
             <div class="flex flex-col md:w-[50rem]">
@@ -56,8 +56,8 @@
                     {#each buttons as button, i}
                         <Button
                                 class={cn(
-                                    "rounded-none light:hover:bg-primary dark:hover:bg-primary border-t hover:text-black w-full items-center justify-center min-h-[3rem] flex-1 md:border-b-0",
-                                    i === buttons.length - 1 ? "border-b" : "border-b-0",
+                                    "rounded-none light:hover:bg-primary dark:hover:bg-primary hover:text-black w-full items-center justify-center min-h-[3rem] flex-1 md:border-b-0",
+                                    i === buttons.length - 1 ? "" : "",
                                 )}
                                 variant="ghost"
                                 href={button.link}

@@ -72,7 +72,7 @@
 <div class="w-dvw h-dvh text-sm sm:text-xl md:text-2xl justify-center items-center font-normal text-light overflow-hidden p-12 sm:p-20 flex flex-col md:p-24 space-y-10 bg-black text-white">
     <div class="text-left w-full">
         <Scrambler
-                characters="NIGGER"
+                characters="A B C D E F G H I J K L M N O P Q R S T U V W X Y Z . ! ? : ; ' + − * / = > < € $ £ ¥ & @ # % _ ~ \ | ( ) [ ] < >"
                 className="font-azeret-mono"
                 revealDirection="start"
                 scrambleSpeed={50}
@@ -81,7 +81,7 @@
                 useOriginalCharsOnly={false}
         />
         <Scrambler
-                characters="NIGGER"
+                characters="A B C D E F G H I J K L M N O P Q R S T U V W X Y Z . ! ? : ; ' + − * / = > < € $ £ ¥ & @ # % _ ~ \ | ( ) [ ] < >"
                 className="font-azeret-mono"
                 revealDirection="start"
                 scrambleSpeed={50}

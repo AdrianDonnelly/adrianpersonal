@@ -1,5 +1,8 @@
 <script>
     import {Separator} from "$shadcn/separator";
+    import * as NavigationMenu from "$shadcn/navigation-menu";
+    import {Bike, CircleCheckIcon, CircleHelpIcon, CircleIcon, Guitar, MountainSnow} from "lucide-svelte";
+
 </script>
 
 <svelte:head>
@@ -11,7 +14,7 @@
         <h1 class="scroll-m-20 text-2xl font-extrabold tracking-tight w-full">Adrian Donnelly</h1>
 
         <Separator class="my-4"/>
-        <div class="flex flex-wrap items-center justify-between">
+        <div class="flex flex-wrap items-center justify-between mr-5">
             <div class="flex flex-row gap-3 text-muted-foreground mb-3">
                 <h1 class="scroll-m-20 text-l font-semibold tracking-tight hover:text-white duration-200"><a
                         href="https://www.linkedin.com/in/adrdonnelly/">LinkedIn</a></h1>
@@ -24,7 +27,7 @@
                 <h1 class="scroll-m-20 text-l font-semibold tracking-tight hover:text-white duration-200"><a
                         href="https://github.com/AdrianDonnelly">Github</a></h1>
             </div>
-            <div class="flex flex-row gap-3 text-muted-foreground mb-3">
+            <div class="flex flex-row flex-wrap items-center justify-between gap-3 text-muted-foreground mb-3">
                 <h1 class="scroll-m-20 text-l font-semibold tracking-tight hover:text-white duration-200"><a
                         href="/blog">Blog</a></h1>
                 <Separator orientation="vertical"/>
@@ -36,8 +39,37 @@
                 <Separator orientation="vertical"/>
                 <h1 class="scroll-m-20 text-l font-semibold tracking-tight hover:text-white duration-200"><a
                         href="/cv">CV</a></h1>
+                <Separator orientation="vertical"/>
 
+                <NavigationMenu.Root>
+                    <NavigationMenu.List>
+                        <NavigationMenu.Item>
+                            <NavigationMenu.Trigger><h1 class="scroll-m-20 text-l font-semibold tracking-tight hover:text-white duration-200">Hobbies</h1></NavigationMenu.Trigger>
+
+                            <NavigationMenu.Content>
+                                <ul class="grid w-l gap-4 p-2">
+                                    <li>
+                                        <NavigationMenu.Link href="/hiking" class="flex-row items-center gap-2">
+                                            <MountainSnow />
+                                            Hiking
+                                        </NavigationMenu.Link>
+
+                                        <NavigationMenu.Link href="/Motorbikes" class="flex-row items-center gap-2">
+                                            <Bike />
+                                            Motorbikes
+                                        </NavigationMenu.Link>
+
+                                        <NavigationMenu.Link href="/Music" class="flex-row items-center gap-2">
+                                            <Guitar />
+                                            Music
+                                        </NavigationMenu.Link>
+                                    </li>
+                                </ul>
+                            </NavigationMenu.Content>
+                        </NavigationMenu.Item>
+                    </NavigationMenu.List>
+                </NavigationMenu.Root>
             </div>
-        </div>
+    </div>
     </div>
 </nav>

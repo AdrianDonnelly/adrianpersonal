@@ -31,7 +31,8 @@
 		"svelte": "^5.0.0"
 	},
 	"devDependencies": {
-		"@lucide/svelte": "^0.482.0",
+		"@internationalized/date": "^3.8.1",
+		"@lucide/svelte": "^0.513.0",
 		"@sveltejs/adapter-auto": "^6.0.1",
 		"@sveltejs/adapter-static": "^3.0.8",
 		"@sveltejs/kit": "^2.21.1",
@@ -57,9 +58,10 @@
 		"svelte"
 	],
 	"dependencies": {
+		"@radix-ui/react-navigation-menu": "^1.2.13",
 		"@radix-ui/react-slot": "^1.2.3",
 		"@types/js-search": "^1.4.4",
-		"bits-ui": "^1.5.3",
+		"bits-ui": "^2.5.0",
 		"class-variance-authority": "^0.7.1",
 		"clsx": "^2.1.1",
 		"embla-carousel-svelte": "^8.6.0",
@@ -80,7 +82,7 @@
 		"svelte-persisted-store": "^0.12.0",
 		"svelte-sonner": "^1.0.2",
 		"tailwind-merge": "^3.3.1",
-		"tailwind-variants": "^0.2.1",
+		"tailwind-variants": "^1.0.0",
 		"vaul-svelte": "^1.0.0-next.7"
 	}
 }
