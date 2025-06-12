@@ -92,7 +92,7 @@
     </div>
 </div>
 
-<div class='flex p-10 flex-col w-full  mx-auto -x'>
+<div class='flex p-10 flex-col w-full max-w-410 mx-auto -x'>
 
     <div class='w-full h-full flex justify-between items-center'>
         <h2 class='font-bold text-2xl p-2'>
@@ -101,7 +101,7 @@
     </div>
 
     {#if FeaturedPosts && FeaturedPosts.length > 0}
-        <div class='w-full h-full flex justify-between items-center md:flex-nowrap flex-wrap'>
+        <div class=' h-full flex justify-between items-center flex-wrap pb-5'>
             {#each FeaturedPosts as post, i}
                 <span class={cn(`flex-grow md:max-w-[50%] max-w-[100%]`, i !== FeaturedPosts.length - 1 && '-r')}>
                     <BigCard {...post}/>
@@ -113,90 +113,4 @@
     {/if}
 
     <div class="h-6 min-h-6 -y"></div>
-
-    <div class='w-full h-full flex justify-between items-center -b bg-muted/25'>
-        <h2 class='font-bold text-2xl p-2'>
-            Achievements
-        </h2>
-    </div>
-
-    <div class=" -b flex h-10 items-center">
-        <p class="w-10 h-10 -r flex items-center justify-center text-muted-foreground font-bold">
-            0
-        </p>
-        <p class="p-2 text-sm text-muted-foreground">
-            Entrepreneurial Endeavors
-        </p>
-    </div>
-
-    <InfoCard
-            buttonLink="/post/_Serros_ML"
-            buttonText="Read about it"
-            description="A programmable, event-driven AI customer support assistant. Our idea? Streamline customer service without over-relying on LLMs, which are often hit-or-miss when it comes to structured tasks."
-            imgAlt="SerrosML"
-            imgSrc="/assets/SerrosML.png"
-            title="SerrosML"/>
-
-    <div class="w-full border-b flex h-10 items-center">
-        <p class="w-10 h-10 border-r flex items-center justify-center text-muted-foreground font-bold">
-            1
-        </p>
-        <p class="p-2 text-sm text-muted-foreground">
-            Studies
-        </p>
-    </div>
-    <InfoCard
-            buttonLink=""
-            buttonText="Soon"
-            description="Completed my 3rd year of Computing with Software Development from Technological University Dublin."
-            imgAlt="TU Dublin"
-            imgSrc="/assets/tud.png"
-            note="3.0 GPA average"
-            title="Completed my 3rd year in TU Dublin"/>
-
-    <div class="w-full border-b flex h-10 items-center">
-        <p class="w-10 h-10 border-r flex items-center justify-center text-muted-foreground font-bold">
-            2
-        </p>
-        <p class="p-2 text-sm text-muted-foreground">
-            Experience
-        </p>
-    </div>
-
-    <InfoCard
-            buttonLink="/post/_MC_Departure"
-            buttonText="Read about it"
-            description="Currently Completing a 6 month internship with Mastercard's CTMC team, working primarily in java. During my time here working with my team, it has tought me so much about software development that cant be learned in a classroom"
-            imgAlt="Mastercard"
-            imgSrc="/assets/mc.png"
-            title="Mastercard"/>
-
-
-    <div class="h-6 min-h-6"></div>
-
-    <div class='w-full h-full flex justify-between items-center -y'>
-        <h2 class='font-bold text-2xl p-2'>
-            Recent Posts
-        </h2>
-        <div class="hidden sm:flex align-middle items-center gap-x-3 text-sm text-muted-foreground -l self-stretch">
-            <h3 class="text-center w-[8rem] font-bold">
-                Date Published
-            </h3>
-        </div>
-    </div>
-
-    {#if RecentPosts && RecentPosts.length > 0}
-        <div class='w-full h-full flex flex-col justify-between items-center '>
-            {#each RecentPosts as post, i }
-                <span class={cn('w-full post-small flex-grow transition duration-200 hover:bg-gray-100 hover:text-black', i !== RecentPosts.length - 1 && '-b')}>
-                    <SmallCard {...post}/>
-                </span>
-            {/each}
-        </div>
-    {:else}
-        <p class="p-4 text-center text-muted-foreground">No recent posts to display yet.</p>
-    {/if}
-
-    <div class="h-6 -t min-h-6"></div>
-
 </div>

@@ -106,13 +106,12 @@
         ]}
 />
 
-<div class='flex flex-col mx-auto'>
-    <div class='w-full flex justify-between items-center h-[5rem] '>
-        <h2 class='font-bold text-2xl p-2'>
-            Blog
-        </h2>
-    </div>
-
+<div class='w-full flex  max-w-screen-lg justify-between items-center  h-[5rem] '>
+    <h2 class='font-bold text-2xl p-2'>
+        Blog
+    </h2>
+</div>
+<div class='flex flex-col w-full max-w-screen-lg mx-auto pl-20 pr-20'>
     <div class='flex flex-col'>
             <div class="h-full p-2 flex flex-col items-center justify-center gap-1 p-5 border-b border-t">
                 <h2 class='font-bold text-2xl '>
@@ -122,7 +121,7 @@
                         bind:value={search}
                         oninput={() => debouncedExecuteSearch(search)}
                         type="text"
-                        class="rounded-none bg-muted/25 max-w-xl"
+                        class="rounded-none bg-muted/25"
                         id="search-input"
                         placeholder="Search for posts..."/>
             </div>
