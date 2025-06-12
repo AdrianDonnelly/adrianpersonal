@@ -79,6 +79,7 @@
 		"sharp": "^0.34.2",
 		"svelte-legos": "^0.2.5",
 		"svelte-markdown": "^0.4.1",
+		"svelte-motion": "^0.12.2",
 		"svelte-persisted-store": "^0.12.0",
 		"svelte-sonner": "^1.0.2",
 		"tailwind-merge": "^3.3.1",

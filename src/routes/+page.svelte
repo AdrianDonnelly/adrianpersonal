@@ -130,49 +130,47 @@
     </div>
 
     <InfoCard
-            buttonLink="/post/my-entrepreneurial-journey"
-            buttonText="Learn More"
-            description="Actively exploring and building new projects in the startup space, leveraging my software development background to bring innovative ideas to life."
-            imgAlt="Entrepreneurial Journey"
-            imgSrc="/assets/ef.png"
-            title="Launching a New Venture"
-    />
+            buttonLink="/post/_Serros_ML"
+            buttonText="Read about it"
+            description="A programmable, event-driven AI customer support assistant. Our idea? Streamline customer service without over-relying on LLMs, which are often hit-or-miss when it comes to structured tasks."
+            imgAlt="SerrosML"
+            imgSrc="/assets/SerrosML.png"
+            title="SerrosML"/>
 
-    <div class=" -b flex h-10 items-center">
-        <p class="w-10 h-10 -r flex items-center justify-center text-muted-foreground font-bold">
+    <div class="w-full border-b flex h-10 items-center">
+        <p class="w-10 h-10 border-r flex items-center justify-center text-muted-foreground font-bold">
             1
         </p>
         <p class="p-2 text-sm text-muted-foreground">
-            Academic Achievements
+            Studies
         </p>
     </div>
     <InfoCard
-            buttonLink="/cv"
-            buttonText="View Transcript"
-            description="Successfully completed a comprehensive program in Computing with Software Development, focusing on modern software engineering principles and practices."
+            buttonLink=""
+            buttonText="Soon"
+            description="Completed my 3rd year of Computing with Software Development from Technological University Dublin."
             imgAlt="TU Dublin"
             imgSrc="/assets/tud.png"
-            note="Achieved a First Class Honours degree."
-            title="Graduated from Technological University Dublin"
-    />
+            note="3.0 GPA average"
+            title="Completed my 3rd year in TU Dublin"/>
 
-    <div class=" -b flex h-10 items-center">
-        <p class="w-10 h-10 -r flex items-center justify-center text-muted-foreground font-bold">
+    <div class="w-full border-b flex h-10 items-center">
+        <p class="w-10 h-10 border-r flex items-center justify-center text-muted-foreground font-bold">
             2
         </p>
         <p class="p-2 text-sm text-muted-foreground">
-            Professional Experience
+            Experience
         </p>
     </div>
 
     <InfoCard
-            buttonLink="/post/mastercard-experience"
+            buttonLink="/post/_MC_Departure"
             buttonText="Read about it"
-            description="Gained valuable experience working on high-performance Java and TypeScript microservices within Mastercard's MPGS team, contributing to critical payment solutions."
+            description="Currently Completing a 6 month internship with Mastercard's CTMC team, working primarily in java. During my time here working with my team, it has tought me so much about software development that cant be learned in a classroom"
             imgAlt="Mastercard"
             imgSrc="/assets/mc.png"
-            title="Software Engineer at Mastercard"
-    />
+            title="Mastercard"/>
+
 
     <div class="h-6 min-h-6"></div>
 

@@ -106,7 +106,7 @@
         ]}
 />
 
-<div class='flex flex-col p-10 max-w-300 w-full  mx-auto min-h-[95vh]'>
+<div class='flex flex-col mx-auto'>
     <div class='w-full flex justify-between items-center h-[5rem] '>
         <h2 class='font-bold text-2xl p-2'>
             Blog
@@ -114,7 +114,7 @@
     </div>
 
     <div class='flex flex-col'>
-            <div class="h-full p-2 flex flex-col items-center justify-center gap-1 bg-[#09090b]">
+            <div class="h-full p-2 flex flex-col items-center justify-center gap-1 p-5 border-b border-t">
                 <h2 class='font-bold text-2xl '>
                     Search
                 </h2>
