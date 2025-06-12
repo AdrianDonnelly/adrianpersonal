@@ -26,16 +26,15 @@
     }
 
     const hobbies = [
-        '/assets/win.jpg',
-        '/assets/Beech.png',
-        '/assets/beer1.png',
-        '/assets/Gib.png',
-        '/assets/gm1.png',
-        '/assets/gm2.png',
-        '/assets/gm3.png',
-        '/assets/h1.png',
+        '/assets/image0.jpeg',
+        '/assets/image1.jpeg',
+        '/assets/image2.jpeg',
+        '/assets/image5.jpeg',
+        '/assets/image6.jpeg',
+        '/assets/image7.jpeg',
+        '/assets/image8.jpeg',
         '/assets/Hikinh.png',
-        // '/assets/beer2.png',
+        //'/assets/beer2.png',
     ];
 
     onMount(() => {
@@ -52,11 +51,14 @@
         };
     });
 </script>
-
+<div class='w-full flex  max-w-screen-lg justify-between items-center  bg-muted/25 h-[5rem] '>
+    <h2 class='font-bold text-2xl p-2'>
+       About
+    </h2>
+</div>
 <CustomHead
         description="
-    Hey, I’m Grzegorz, a Software Engineer based in Dublin. Graduate of TU Dublin (BSc Computing). Currently building at Entrepreneur First. Click
-    here to find out more about me.
+    Hey, I’m Adrian, a Software Engineer based in Dublin. Currently Studying in TU Dublin (BSc Computing).
 "/>
 
 <div class='
@@ -79,22 +81,7 @@
         }
     </style>
 
-    <!-- Big Text -->
-    <div class='flex flex-col gap-0 absolute top-0 left-[1rem] z-[55]' bind:offsetHeight={titleHeight} bind:this={title}>
-        <h1 class='font-extrabold lg:text-[8rem] lg:leading-[8rem] md:text-[6rem] md:leading-[6rem] sm:text-[5rem] sm:leading-[5rem] text-[3rem] m-0 leading-[3rem]  drop-shadow-lg'>
-            DRIVEN TO
-        </h1>
-        <h1 class='font-extrabold lg:text-[8rem] lg:leading-[8rem] md:text-[6rem] md:leading-[6rem] sm:text-[5rem] sm:leading-[5rem] text-[3rem] m-0 leading-[3rem] drop-shadow-lg'>
-            SUCCEED,
-        </h1>
-        <h1 class='font-extrabold lg:text-[8rem] lg:leading-[8rem] md:text-[6rem] md:leading-[6rem] sm:text-[5rem] sm:leading-[5rem] text-[3rem] m-0 leading-[3rem]  drop-shadow-lg'>
-            SIMPLE.
-        </h1>
-    </div>
-
-    <div bind:this={spacer}></div>
-
-    <div class="gradient w-full sm:w-[90%] relative h-min rounded-none border">
+    <div class="gradient w-full sm:w-[90%] relative h-min rounded-none ">
         <div class="w-full flex justify-end">
             <div class='absolute z-[50] top-[-1rem] right-[-1rem] sm:top-[-2rem] sm:right-[-1rem] w-[90%] sm:w-[70%]'>
                 <AspectRatio ratio={1.5/1} class='bg-secondary'>
@@ -116,8 +103,7 @@
         </div>
 
         <p class='text-white max-w-[95%] sm:max-w-[70%] p-4'>
-            Hey, I’m Grzegorz, a Software Engineer based in Dublin. Graduate of TU Dublin (BSc Computing). Currently building at Entrepreneur First.
-            I’m genuinely passionate about my studies and love exploring new technologies while staying updated on the latest trends in the industry.
+            Hey, I’m Adrian, a Software Engineer based in Dublin. Currently Studying in TU Dublin (BSc Computing).
         </p>
 
         <div class="h-6 min-h-6 border-t"></div>
@@ -128,7 +114,7 @@
         </div>
 
         <p class='text-white max-w-[95%] sm:max-w-[70%] p-4'>
-            I focus on whatever I find interesting. I’m always on the lookout for new things to learn and projects to dive into. Right now, I’m working on a few projects, including this website.
+            I focus on whatever I find interesting. That includes personal and professional endeavours.
         </p>
 
         <div class="h-6 min-h-6 border-t"></div>
@@ -148,86 +134,13 @@
             max-w-screen-lg
             mx-auto
         ">
-            <Card.Root class="border-x-0 border-b-0 rounded-none py-0 bg-transparent">
-                <Card.Content class="p-0 gap-3 text-white flex justify-between items-center h-[4.5rem] flex-wrap">
-                    <div class="flex items-center justify-center">
-                        <div class="fixed-square border-r flex items-center justify-center">
-                            <Email size={24} class="stroke-[1.5px] ml-1"/>
-                        </div>
-
-                        <div class="w-full ml-3">
-                            <h1 class='font-bold'>
-                                Email
-                            </h1>
-
-                            <p>
-                                <a href="mailto:contact@grzegorz.ie" class="text-primary">
-                                    contact@grzegorz.ie
-                                </a>
-                            </p>
-                        </div>
-                    </div>
-
-                    <Button class="hidden md:flex rounded-none light:hover:bg-primary dark:hover:bg-primary h-full border-l hover:text-black w-[20rem]" variant="ghost" href="mailto:contact@grzegorz.ie">
-                        Send me an email
-                    </Button>
-                </Card.Content>
-            </Card.Root>
 
             <div class="h-6 border-t min-h-6"></div>
-
-            <Card.Root class="border-x-0 rounded-none py-0 bg-transparent">
-                <Card.Content class="p-0 gap-3 text-white flex justify-between items-center h-[4.5rem] flex-wrap ">
-                    <div class="flex items-center justify-center">
-                        <div class="fixed-square border-r flex items-center justify-center">
-                            <LinkedIn size={24} class="stroke-[1.5px] ml-1"/>
-                        </div>
-
-                        <div class="w-full ml-3">
-                            <h1 class='font-bold'>
-                                LinkedIn
-                            </h1>
-
-                            <p>
-                                <a href="https://www.linkedin.com/in/grzegorz-maniak/" class="text-primary">
-                                    Grzegorz Maniak
-                                </a>
-                            </p>
-                        </div>
-                    </div>
-                    <Button class="hidden md:flex rounded-none hover:bg-primary dark:hover:bg-primary h-full border-l hover:text-black w-[20rem]" variant="ghost" href="https://www.linkedin.com/in/grzegorz-maniak/">
-                        Connect on LinkedIn
-                    </Button>
-                </Card.Content>
-            </Card.Root>
-
-
-            <Button href="/contact" variant='link' class="w-full">
-                More ways to contact me
-            </Button>
         </div>
 
     </div>
 </div>
 
-
-<div class='flex flex-col w-full  mx-auto border-x border-t '>
-    <div class='flex flex-col'>
-        <Grid
-                rows={4}
-                smallRows={4}
-                columns={12}
-                smallColumns={8}
-                class="w-full h-full border-b"
-                cellClass="hover:bg-primary dark:hover:bg-primary transition-color duration-500"
-        >
-            <div class="border-r border-b h-full p-2 flex flex-col items-center justify-center bg-[#09090b]">
-                <h2 class='font-bold text-2xl '>
-                    A little bit about me
-                </h2>
-            </div>
-        </Grid>
-    </div>
 
     <div class='flex flex-col gap-0 items-center align-middle'>
         <div class='w-full h-full flex justify-between items-center border-b bg-muted/25'>
@@ -238,8 +151,7 @@
 
         <p class=' m-0 p-4'>
             In my free time, I enjoy hiking, mountain biking, playing guitar,
-            Beer (Drinking it, not making it), Guinness,
-            bouldering, programming (yes, it's a hobby too), 3D Printing (Sadly) and competing.
+            bouldering and Motorbikes.
         </p>
 
         <div class="border-t">
@@ -367,10 +279,3 @@
             description="Completed a 6-month internship with Mastercard's Dublin MPGS team, working on Java and TypeScript microservices. Received a full-time offer to return as a SWE."/>
 
     <div class="h-6 min-h-6"></div>
-
-    <div class='w-full flex justify-between items-center border-y bg-muted/25'>
-        <h2 class='font-bold text-2xl p-2'>
-            Want to chat?
-        </h2>
-    </div>
-</div>

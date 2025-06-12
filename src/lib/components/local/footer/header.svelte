@@ -19,7 +19,6 @@
             <div class="flex gap-4 justify-center sm:items-end w-full sm:w-min">
                 <a class="text-lg font-medium" href="/blog">Blog</a>
                 <a class="text-lg font-medium" href="/projects">Projects</a>
-                <a class="text-lg font-medium" href="/contact">Contact</a>
                 <a class="text-lg font-medium" href="/about">About</a>
                 <a class="text-lg font-medium" href="/cv">CV</a>
             </div>

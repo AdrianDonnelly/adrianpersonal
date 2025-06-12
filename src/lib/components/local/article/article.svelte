@@ -100,7 +100,7 @@
     }) + tagClose}
 </svelte:head>
 
-<div class={cn(className, 'w-screen flex justify-center items-center ')}>
+<div class={cn(className, 'max-w-300 flex justify-center items-center ')}>
     <div class='w-full h-full flex flex-col align-top -x'>
         <Post {...props}/>
 

@@ -21,7 +21,7 @@
         id={id}>
 
     <header class="flex-grow p-4">
-        <svelte:element this={HeadingTag} class="text-base md:text-lg font-medium">
+        <svelte:element this={HeadingTag} class="text-base md:text-lg font-medium ">
             <a href={`/post/${id}`} class="text-primary hover:underline">
                 {title ?? 'Untitled Post'}
             </a>

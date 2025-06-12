@@ -54,12 +54,12 @@
                                             Hiking
                                         </NavigationMenu.Link>
 
-                                        <NavigationMenu.Link href="/Motorbikes" class="flex-row items-center gap-2">
+                                        <NavigationMenu.Link href="/motorbikes" class="flex-row items-center gap-2">
                                             <Bike />
                                             Motorbikes
                                         </NavigationMenu.Link>
 
-                                        <NavigationMenu.Link href="/Music" class="flex-row items-center gap-2">
+                                        <NavigationMenu.Link href="/music" class="flex-row items-center gap-2">
                                             <Guitar />
                                             Music
                                         </NavigationMenu.Link>
