@@ -1,7 +1,7 @@
 <script>
     import {Separator} from "$shadcn/separator";
     import * as NavigationMenu from "$shadcn/navigation-menu";
-    import {Bike, CircleCheckIcon, CircleHelpIcon, CircleIcon, Guitar, MountainSnow} from "lucide-svelte";
+    import {Bike, CircleCheckIcon, CircleHelpIcon, CircleIcon, Backpack, Guitar, MountainSnow} from "lucide-svelte";
 
 </script>
 
@@ -62,6 +62,11 @@
                                         <NavigationMenu.Link href="/music" class="flex-row items-center gap-2">
                                             <Guitar />
                                             Music
+                                        </NavigationMenu.Link>
+
+                                        <NavigationMenu.Link href="/music" class="flex-row items-center gap-2">
+                                            <Backpack />
+                                            Travel
                                         </NavigationMenu.Link>
                                     </li>
                                 </ul>

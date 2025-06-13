@@ -175,14 +175,10 @@
         overflow: hidden;
         clip: rect(0, 0, 0, 0);
         white-space: nowrap;
-        : 0;
     }
 </style>
 
 <article class={cn("w-full flex flex-col ", className)} {id} data-tags={tags.join(', ')}>
-    <div class='flex flex-col'>
-    </div>
-
     <header class="w-full flex flex-col ">
         <div class='flex flex-col gap-5 -b bg-muted/25 items-center'>
             <div class="text-sm flex">
@@ -212,6 +208,7 @@
     {#if showCoverImage && cover}
         <figure>
             <AspectRatio ratio={16 / 9} class="bg-muted rounded-none overflow-hidden">
+                <h1>{title}</h1>
                 <img src={cover} alt="Cover image for {title}" class="object-cover w-full h-full"/>
             </AspectRatio>
         </figure>

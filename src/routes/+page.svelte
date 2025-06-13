@@ -92,7 +92,7 @@
     </div>
 </div>
 
-<div class='flex p-10 flex-col w-full max-w-410 mx-auto -x'>
+<div class='flex pt-10 flex-col w-full max-w-350 mx-auto'>
 
     <div class='w-full h-full flex justify-between items-center'>
         <h2 class='font-bold text-2xl p-2'>

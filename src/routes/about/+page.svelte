@@ -76,7 +76,7 @@
         }
     </style>
 
-    <div class="gradient w-full sm:w-[90%] relative h-min rounded-none ">
+    <div class="w-full sm:w-[90%] relative h-min rounded-none ">
         <div class="w-full flex justify-end">
             <div class='absolute z-[50] top-[-1rem] right-[-1rem] sm:top-[-2rem] sm:right-[-1rem] w-[90%] sm:w-[70%]'>
                 <AspectRatio class='bg-secondary' ratio={1.5/1}>
@@ -91,53 +91,20 @@
         </div>
 
         <div class="h-6 min-h-6 mt-1"></div>
-        <div class='w-full flex justify-between items-center border-y'>
+        <div class='w-full flex justify-between items-center '>
             <h2 class='font-bold text-2xl p-4'>
                 Who am I?
             </h2>
         </div>
 
-        <p class='text-white max-w-[95%] sm:max-w-[70%] p-4'>
-            Hey, I’m Adrian, a Software Engineer based in Dublin. Currently Studying in TU Dublin (BSc Computing).
-        </p>
-
-        <div class="h-6 min-h-6 border-t"></div>
-        <div class='w-full flex justify-between items-center border-y'>
-            <h2 class='font-bold text-2xl p-4'>
-                What do I do?
-            </h2>
-        </div>
-        <p class='text-white max-w-[95%] sm:max-w-[70%] p-4'>
-            Build Things
-        </p>
-
-        <div class="h-6 min-h-6 border-t"></div>
-        <div class='w-full flex justify-between items-center border-y'>
-            <h2 class='font-bold text-2xl p-4'>
-                Feel free to reach out
-            </h2>
-        </div>
-
-        <p class='text-white max-w-[95%] sm:max-w-[70%] p-4 '>
-            If you have any questions or just want to chat, feel free to reach out to me on social media or via email.
-            I’m always open to new opportunities and collaborations.
-        </p>
-
-        <div class=" flex
-            flex-col
-            w-full
-            max-w-screen-lg
-            mx-auto
-        ">
-
-            <div class="h-6 border-t min-h-6"></div>
-        </div>
+        <p class='text-white max-w-[95%] sm:max-w-[70%] p-4 border-b'>
+            Hey, I'm Adrian, a Software Engineer and a third-year Computer Science student at TU Dublin. I'm currently interning with the CTMC team at Mastercard, where I primarily work with Java to optimize commercial transaction systems. I'm passionate about building things and gaining hands-on experience in software development </p>
 
     </div>
 
 
 <div class='flex flex-col gap-0 items-center align-middle'>
-    <div class='w-full h-full flex justify-between items-center border-b'>
+    <div class='w-full h-full flex justify-between items-center'>
         <h2 class='font-bold text-2xl p-2'>
             Hobbies
         </h2>
@@ -148,12 +115,12 @@
         Bouldering, Motorbikes, The list goes on for a while.
     </p>
 
-    <div class="border-t">
-        <Carousel.Root class="rounded-none" opts={{ align: "start" }}>
+    <div class="border-b pb-5">
+        <Carousel.Root class="rounded-none " opts={{ align: "start" }}>
             <Carousel.Content>
                 {#each hobbies as hobby, i}
                     <Carousel.Item class="md:basis-1/2 lg:basis-1/3 p-0">
-                        <Card.Root class="border-0 border-r rounded-none bg-transparent p-0">
+                        <Card.Root class="border-0  rounded-none bg-transparent p-0">
                             <Card.Content class="flex aspect-square items-center justify-center p-0 overflow-hidden">
                                 <img
                                         src={hobby}
@@ -171,55 +138,16 @@
     </div>
 </div>
 
-<div class='flex flex-col gap-0 w-full '>
-
-    <div class="h-6 border-t min-h-6"></div>
-    <div class='w-full h-full flex justify-between items-center border-y'>
-        <h2 class='font-bold text-2xl p-2'>
-            Awards and Achievements
-        </h2>
-    </div>
-
-    <p class=' m-0  p-4'>
-        I have been fortunate enough to receive a few awards and achievements throughout my academic career. Here are a
-        few of them:
-    </p>
-
-    <div class="flex flex-col">
-        {#each [
-            "Attended the Mastercard intern Hackathon",
-            "Started internship with Mastercard",
-            "3.1 GPA @ Technological University Dublin 3rd Year",
-            "Best Patient Benefit @ TUH Healthcare Hackathon 2024",
-            "3.1 GPA @ Technological University Dublin 2nd Year",
-            "Best Use of Technology @ TUH Healthcare Hackathon 2023",
-            "3.0 GPA @ Technological University Dublin 1st Year",
-            "Second Place @ TUH Healthcare Hackathon 2022"
-        ] as achievement, i}
-            <div class=" border-t flex h-[4rem] md:h-10 items-center">
-                <p class="md:w-10 md:min-w-10 w-[4rem] min-w-[4rem] border-r flex items-center justify-center text-muted-foreground font-bold h-[4rem] md:h-10">
-                    {i + 1}
-                </p>
-                <p class="p-2">
-                    {achievement}
-                </p>
-            </div>
-        {/each}
-
-    </div>
-
-</div>
-
-<div class=" w-full h-6 border-t min-h-6"></div>
-<div class='w-full h-full flex justify-between items-center border-y'>
+<div class=" w-full h-6  min-h-6"></div>
+<div class='w-full h-full flex justify-between items-center '>
     <h2 class='font-bold text-2xl p-2'>
         Achievements
     </h2>
 </div>
 
 
-<div class="w-full border-b flex h-10 items-center">
-    <p class="w-10 h-10 border-r flex items-center justify-center text-muted-foreground font-bold">
+<div class="w-full  flex h-10 items-center">
+    <p class="w-10 h-10  flex items-center justify-center text-muted-foreground font-bold">
         0
     </p>
     <p class="p-2 text-sm text-muted-foreground">
@@ -235,8 +163,8 @@
         imgSrc="/assets/SerrosML.png"
         title="SerrosML"/>
 
-<div class="w-full border-b flex h-10 items-center">
-    <p class="w-10 h-10 border-r flex items-center justify-center text-muted-foreground font-bold">
+<div class="w-full  flex h-10 items-center">
+    <p class="w-10 h-10 flex items-center justify-center text-muted-foreground font-bold">
         1
     </p>
     <p class="p-2 text-sm text-muted-foreground">
@@ -252,8 +180,8 @@
         note="3.0 GPA average"
         title="Completed my 3rd year in TU Dublin"/>
 
-<div class="w-full border-b flex h-10 items-center">
-    <p class="w-10 h-10 border-r flex items-center justify-center text-muted-foreground font-bold">
+<div class="w-full  flex h-10 items-center">
+    <p class="w-10 h-10  flex items-center justify-center text-muted-foreground font-bold">
         2
     </p>
     <p class="p-2 text-sm text-muted-foreground">
