@@ -92,7 +92,7 @@
     </div>
 </div>
 
-<div class='flex p-10 flex-col w-full max-w-410 mx-auto -x'>
+<div class='flex pt-10 flex-col col-span-2 w-full mx-auto'>
 
     <div class='w-full h-full flex justify-between items-center'>
         <h2 class='font-bold text-2xl p-2'>
@@ -101,11 +101,11 @@
     </div>
 
     {#if FeaturedPosts && FeaturedPosts.length > 0}
-        <div class=' h-full flex justify-between items-center flex-wrap pb-5'>
-            {#each FeaturedPosts as post, i}
-                <span class={cn(`flex-grow md:max-w-[50%] max-w-[100%]`, i !== FeaturedPosts.length - 1 && '-r')}>
+        <div class='h-full grid grid-cols-1 md:grid-cols-2 gap-4 pb-5'>
+            {#each FeaturedPosts as post}
+                <div class="col-span-1">
                     <BigCard {...post}/>
-                </span>
+                </div>
             {/each}
         </div>
     {:else}

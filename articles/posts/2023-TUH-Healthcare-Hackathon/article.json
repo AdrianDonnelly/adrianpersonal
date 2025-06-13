@@ -1,0 +1,48 @@
+{
+  "cover": "<local:2023.jpg>",
+  "title": "Best Use of Technology @ TUH Healthcare Hackathon 2023",
+  "body": "I'm excited to share that our team—Grzegorz Maniak, Joven Sagrado, and I—participated in the #HealthHackathonTUH with AWS. Our project, 'Simplifying the Reporting of Broken and Missing Equipment, Patients, and Staff,' focused on tracking while ensuring privacy through passive Bluetooth Low Energy trackers. We were thrilled to win the 'Best Use of Technology' award and look forward to competing again next year!",
+  "link": "https://www.linkedin.com/posts/grzegorz-maniak_healthhackathontuh-activity-7113879608889860096-0nyj?utm_source=share&utm_medium=member_desktop",
+  "date": "2023-09-23T00:00:00.000Z",
+  "tags": [
+    "hackathon",
+    "aws",
+    "healthcare",
+    "innovation",
+    "ai",
+    "award"
+  ],
+  "links": [
+    {
+      "title": "Tallaght University Hospital",
+      "url": "https://www.tuh.ie/News/TU-Dublin-Students-Create-Innovative-Tech-Based-Solutions-to-Tackle-Healthcare-Issues-%C2%A0.html"
+    },
+    {
+      "title": "Tallaght University Hospital Announcement",
+      "url": "https://www.tuh.ie/News/Third-Health-Hackathon-Announced-.html"
+    },
+    {
+      "title": "TU Dublin",
+      "url": "https://www.tudublin.ie/explore/news/archive-2023/tu-dublin-students-create-innovative-tech-based-solutions-to-tackle-healthcare-issues--.html"
+    },
+    {
+      "title": "TU Dublin Announcement",
+      "url": "https://www.tudublin.ie/explore/news/archive-2023/third-health-hackathon-announced-.html"
+    },
+    {
+      "title": "AWS inCommunities",
+      "url": "https://aws.amazon.com/about-aws/global-infrastructure/aws-incommunities/"
+    },
+    {
+      "title": "Echo.ie",
+      "url": "https://www.echo.ie/hospital-launches-third-hackathon-for-students/"
+    }
+  ],
+  "people": [
+    "AdrianDonnelly",
+    "GrzegorzManiak",
+    "KeithQuille",
+    "SeanMcHugh",
+    "BarryFeeney"
+  ]
+}

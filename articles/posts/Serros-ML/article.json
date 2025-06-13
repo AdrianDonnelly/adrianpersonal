@@ -1,0 +1,30 @@
+{
+  "title": "Founding of Serros ML",
+  "body": "We are proud to announce the founding of Serros ML, a startup focused on AI Powered and AI Assisted customer support tools.",
+  "link": "https://serros.ml",
+  "date": "2024-11-10T00:00:00.000Z",
+  "dateModified": "2025-01-14T00:00:00.000Z",
+  "tags": [
+    "SerrosML",
+    "Founding",
+    "Startup",
+    "MachineLearning",
+    "AI",
+    "DataScience"
+  ],
+  "links": [
+    {
+      "title": "Serros ML",
+      "url": "https://serros.ml"
+    },
+    {
+      "title": "Serros ML (LinkedIn)",
+      "url": "https://www.linkedin.com/company/serrosml/"
+    }
+  ],
+  "cover": "<local:cover.png>",
+  "people": [
+    "GrzegorzManiak",
+    "AdrianDonnelly"
+  ]
+}

@@ -1,0 +1,45 @@
+{
+  "title": "Best Patient Benefit @ TUH Healthcare Hackathon 2024",
+  "link": "https://www.linkedin.com/posts/grzegorz-maniak_im-happy-to-share-that-my-team-adrian-activity-7250082211905835008-jg7S?utm_source=share&utm_medium=member_desktop",
+  "cover": "<local:2024.jpg>",
+  "date": "2024-10-04T00:00:00.000Z",
+  "tags": [
+    "hackathon",
+    "aws",
+    "healthcare",
+    "innovation",
+    "ai",
+    "award"
+  ],
+  "links": [
+    {
+      "title": "Irish Medical Times",
+      "url": "https://www.imt.ie/news/tu-dublin-students-present-innovative-tech-based-solutions-to-challenges-set-by-tuh-09-10-2024/"
+    },
+    {
+      "title": "Tallaght University Hospital",
+      "url": "https://www.tudublin.ie/news/2024/tu-dublin-students-present-innovative-tech-based-solutions-to-challenges-set-by-tuh.html"
+    },
+    {
+      "title": "TU Dublin",
+      "url": "https://www.tudublin.ie/explore/news/transforming-healthcare-innovation-challenge-launched-.html"
+    },
+    {
+      "title": "AWS inCommunities",
+      "url": "https://aws.amazon.com/about-aws/global-infrastructure/aws-incommunities/"
+    },
+    {
+      "title": "Serros ML (LinkedIn)",
+      "url": "https://www.linkedin.com/company/serrosml/"
+    }
+  ],
+  "people": [
+    "AdrianDonnelly",
+    "DavidByrne",
+    "ThomasLynch",
+    "GrzegorzManiak",
+    "KeithQuille",
+    "SeanMcHugh",
+    "BarryFeeney"
+  ]
+}

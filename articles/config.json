@@ -1,0 +1,35 @@
+{
+  "sitemap": [
+    {
+      "path": "/blog",
+      "priority": 0.8,
+      "changefreq": "daily"
+    },
+    {
+      "path": "/about",
+      "priority": 0.5,
+      "changefreq": "weekly"
+    },
+    {
+      "path": "/contact",
+      "priority": 0.3,
+      "changefreq": "weekly"
+    },
+    {
+      "path": "/cv",
+      "priority": 0.3,
+      "changefreq": "weekly"
+    },
+    {
+      "path": "/",
+      "priority": 1.0,
+      "changefreq": "daily"
+    }
+  ],
+  "featured": [
+    "Joining-Mastercard",
+    "2024-TUH-Healthcare-Hackathon",
+    "Mastercard-Hackathon",
+    "Serros-ML"
+  ]
+}

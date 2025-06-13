@@ -6,9 +6,8 @@
     let {
         class: className,
         trunkAt = 150,
-        headingLevel = 'h2',
-        titleStyle = 'h-[60px] text-2xl font-bold',
-        descriptionStyle = 'h-[60px] text-sm',
+        headingLevel = 'h1',
+        titleStyle = 'h-[60px] text-2xl ',
         id, title, body, date, cover, tags = []
     } = $props<PostData & {
         class?: string;

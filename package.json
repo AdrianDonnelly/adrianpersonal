@@ -2,6 +2,7 @@
 	"name": "adrianpersonal",
 	"version": "0.0.1",
 	"scripts": {
+		"compile": "bun run ./articles/build.ts",
 		"dev": "vite dev",
 		"build": "vite build && npm run prepack",
 		"preview": "vite preview",
