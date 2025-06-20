@@ -13,7 +13,7 @@
     import {InfoCard} from "$local/infoCard/index.js";
 </script>
 
-<CustomHead image="https://grzegorz.ie/assets/meta_about.png"/>
+<CustomHead image="https://adriandonnelly.me/assets/meta_about.png"/>
 
 <div class='
     flex

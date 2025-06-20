@@ -1,6 +1,6 @@
 <script lang="ts">
 	const {
-		image = "https://adriandonnelly.me/assets/meta_about.png",
+		image = "https://adriandonnelly.me/assets/splash.jpg",
         title = "Adrian Donnelly — Software Engineer",
         description = "Hey, Im Adrian.",
         breadCrumbs = [

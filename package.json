@@ -9,7 +9,8 @@
 		"prepare": "svelte-kit sync || echo ''",
 		"prepack": "svelte-kit sync && svelte-package && publint",
 		"check": "svelte-kit sync && svelte-check --tsconfig ./tsconfig.json",
-		"check:watch": "svelte-kit sync && svelte-check --tsconfig ./tsconfig.json --watch"
+		"check:watch": "svelte-kit sync && svelte-check --tsconfig ./tsconfig.json --watch",
+		"deploy": "vite build && bunx gh-pages -d build "
 	},
 	"files": [
 		"dist",
@@ -45,6 +46,7 @@
 		"@types/fs-extra": "^11.0.4",
 		"@types/node": "^24.0.0",
 		"autoprefixer": "^10.4.21",
+		"gh-pages": "^6.3.0",
 		"layerchart": "2.0.0-next.6",
 		"svelte": "^5.33.0",
 		"svelte-check": "^4.2.1",
