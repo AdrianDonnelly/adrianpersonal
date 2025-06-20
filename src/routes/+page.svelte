@@ -7,7 +7,6 @@
     import {Scrambler} from "$lib/components/ui/text"
 
     // You might need to adjust the paths for these components if they are different in your project.
-    // test
     // Define breadCrumbs dynamically within the <script> block
     let breadCrumbs = [
         {name: "Home", url: "https://adriandonnelly.me/"},
