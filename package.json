@@ -4,7 +4,7 @@
 	"scripts": {
 		"compile": "bun run ./articles/build.ts",
 		"dev": "vite dev",
-		"build": "vite build && npm run prepack",
+		"build": "npx vite build",
 		"preview": "vite preview",
 		"prepare": "svelte-kit sync || echo ''",
 		"prepack": "svelte-kit sync && svelte-package && publint",
