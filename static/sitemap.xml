@@ -9,31 +9,31 @@
 >
     
     <url>
-        <loc>https://adriandonnelly.me/blog</loc>
+        <loc>https://adriandonnelly.me//blog</loc>
         <priority>0.8</priority>
         <changefreq>daily</changefreq>
     </url>
 
     <url>
-        <loc>https://adriandonnelly.me/about</loc>
+        <loc>https://adriandonnelly.me//about</loc>
         <priority>0.5</priority>
         <changefreq>weekly</changefreq>
     </url>
 
     <url>
-        <loc>https://adriandonnelly.me/contact</loc>
+        <loc>https://adriandonnelly.me//contact</loc>
         <priority>0.3</priority>
         <changefreq>weekly</changefreq>
     </url>
 
     <url>
-        <loc>https://adriandonnelly.me/cv</loc>
+        <loc>https://adriandonnelly.me//cv</loc>
         <priority>0.3</priority>
         <changefreq>weekly</changefreq>
     </url>
 
     <url>
-        <loc>https://adriandonnelly.me/</loc>
+        <loc>https://adriandonnelly.me//</loc>
         <priority>1</priority>
         <changefreq>daily</changefreq>
     </url>

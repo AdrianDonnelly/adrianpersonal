@@ -138,7 +138,7 @@ function BuildSiteMap(urls: Array<SitemapURL>, posts: Record<string, PostData>):
     for (const url of urls) {
         stringified.push(`
     <url>
-        <loc>https://Grzegorz.ie${url.path}</loc>
+        <loc>https://adriandonnelly.me/${url.path}</loc>
         <priority>${url.priority}</priority>
         <changefreq>${url.changefreq}</changefreq>
     </url>`);
@@ -146,7 +146,7 @@ function BuildSiteMap(urls: Array<SitemapURL>, posts: Record<string, PostData>):
     for (const [key] of Object.entries(posts)) {
         stringified.push(`
     <url>
-        <loc>https://Grzegorz.ie/post/${key}</loc>
+        <loc>https://adriandonnelly.me/post/${key}</loc>
         <priority>0.5</priority>
         <changefreq>daily</changefreq>
     </url>`);
