@@ -9,67 +9,67 @@
 >
     
     <url>
-        <loc>https://Grzegorz.ie/blog</loc>
+        <loc>https://adriandonnelly.me/blog</loc>
         <priority>0.8</priority>
         <changefreq>daily</changefreq>
     </url>
 
     <url>
-        <loc>https://Grzegorz.ie/about</loc>
+        <loc>https://adriandonnelly.me/about</loc>
         <priority>0.5</priority>
         <changefreq>weekly</changefreq>
     </url>
 
     <url>
-        <loc>https://Grzegorz.ie/contact</loc>
+        <loc>https://adriandonnelly.me/contact</loc>
         <priority>0.3</priority>
         <changefreq>weekly</changefreq>
     </url>
 
     <url>
-        <loc>https://Grzegorz.ie/cv</loc>
+        <loc>https://adriandonnelly.me/cv</loc>
         <priority>0.3</priority>
         <changefreq>weekly</changefreq>
     </url>
 
     <url>
-        <loc>https://Grzegorz.ie/</loc>
+        <loc>https://adriandonnelly.me/</loc>
         <priority>1</priority>
         <changefreq>daily</changefreq>
     </url>
 
     <url>
-        <loc>https://Grzegorz.ie/post/_Mastercard_Hackathon</loc>
+        <loc>https://adriandonnelly.me/post/_Mastercard_Hackathon</loc>
         <priority>0.5</priority>
         <changefreq>daily</changefreq>
     </url>
 
     <url>
-        <loc>https://Grzegorz.ie/post/_Joining_Mastercard</loc>
+        <loc>https://adriandonnelly.me/post/_Joining_Mastercard</loc>
         <priority>0.5</priority>
         <changefreq>daily</changefreq>
     </url>
 
     <url>
-        <loc>https://Grzegorz.ie/post/_Serros_ML</loc>
+        <loc>https://adriandonnelly.me/post/_Serros_ML</loc>
         <priority>0.5</priority>
         <changefreq>daily</changefreq>
     </url>
 
     <url>
-        <loc>https://Grzegorz.ie/post/_2024_TUH_Healthcare_Hackathon</loc>
+        <loc>https://adriandonnelly.me/post/_2024_TUH_Healthcare_Hackathon</loc>
         <priority>0.5</priority>
         <changefreq>daily</changefreq>
     </url>
 
     <url>
-        <loc>https://Grzegorz.ie/post/_2023_TUH_Healthcare_Hackathon</loc>
+        <loc>https://adriandonnelly.me/post/_2023_TUH_Healthcare_Hackathon</loc>
         <priority>0.5</priority>
         <changefreq>daily</changefreq>
     </url>
 
     <url>
-        <loc>https://Grzegorz.ie/post/_2022_TUH_Healthcare_Hackathon</loc>
+        <loc>https://adriandonnelly.me/post/_2022_TUH_Healthcare_Hackathon</loc>
         <priority>0.5</priority>
         <changefreq>daily</changefreq>
     </url>
