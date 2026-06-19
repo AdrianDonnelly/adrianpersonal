@@ -25,7 +25,7 @@
 </script>
 
 <Card.Root class={cn("border-0 rounded-none md:border-b py-0 bg-transparent", className)}>
-    <Card.Content class="p-0 text-white flex flex-col md:flex-row md:items-center">
+    <Card.Content class="p-0 text-foreground flex flex-col md:flex-row md:items-center">
         <div class="flex items-stretch w-full md:max-h-[6rem]">
 
             {#if imgSrc}

@@ -36,7 +36,7 @@
 </div>
 
 <Card.Root class="border-0 rounded-none py-0 bg-transparent">
-    <Card.Content class="p-0 text-white flex flex-col">
+    <Card.Content class="p-0 text-foreground flex flex-col">
         <div class="flex flex-col md:flex-row w-full">
             <div class="flex flex-col md:w-[50rem]">
                 <div class="w-full">

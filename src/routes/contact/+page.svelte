@@ -62,7 +62,7 @@
     <div class="h-6 min-h-6"></div>
 
     <Card.Root class="border-x-0 border-b-0 rounded-none bg-transparent p-0">
-        <Card.Content class="p-0 gap-3 text-white flex justify-between items-center h-[4.5rem] flex-wrap">
+        <Card.Content class="p-0 gap-3 text-foreground flex justify-between items-center h-[4.5rem] flex-wrap">
             <div class="flex items-center justify-center">
                 <div class="fixed-square border-r flex items-center justify-center">
                     <Email size={24} class="stroke-[1.5px] ml-1"/>
@@ -90,7 +90,7 @@
     <div class="h-6 border-t min-h-6"></div>
 
     <Card.Root class="border-x-0 border-b-0 rounded-none bg-transparent p-0">
-        <Card.Content class="p-0 gap-3 text-white flex justify-between items-center h-[4.5rem] flex-wrap">
+        <Card.Content class="p-0 gap-3 text-foreground flex justify-between items-center h-[4.5rem] flex-wrap">
             <div class="flex items-center justify-center">
                 <div class="fixed-square border-r flex items-center justify-center">
                     <LinkedIn size={24} class="stroke-[1.5px] ml-1"/>
@@ -117,7 +117,7 @@
     <div class="h-6 border-t min-h-6"></div>
 
     <Card.Root class="border-x-0 border-b-0 rounded-none bg-transparent p-0">
-        <Card.Content class="p-0 gap-3 text-white flex justify-between items-center h-[4.5rem] flex-wrap">
+        <Card.Content class="p-0 gap-3 text-foreground flex justify-between items-center h-[4.5rem] flex-wrap">
             <div class="flex items-center justify-center">
                 <div class="fixed-square border-r flex items-center justify-center">
                     <GitHub size={24} class="stroke-[1.5px] ml-1"/>
@@ -144,7 +144,7 @@
     <div class="h-6 border-t min-h-6"></div>
 
     <Card.Root class="border-x-0 border-b-0 rounded-none bg-transparent p-0">
-        <Card.Content class="p-0 gap-3 text-white flex justify-between items-stretch h-[4.5rem] flex-wrap">
+        <Card.Content class="p-0 gap-3 text-foreground flex justify-between items-stretch h-[4.5rem] flex-wrap">
             <div class="flex items-center justify-center">
                 <div class="fixed-square border-r flex items-center justify-center h-full w-[4.5rem]">
                     <Twitter size={24} class="stroke-[1.5px]"/>
@@ -171,7 +171,7 @@
     <div class="h-6 border-t min-h-6"></div>
 
     <Card.Root class="border-x-0 rounded-none py-0 bg-transparent">
-        <Card.Content class="p-0 gap-3 text-white flex justify-between items-center h-[4.5rem] flex-wrap">
+        <Card.Content class="p-0 gap-3 text-foreground flex justify-between items-center h-[4.5rem] flex-wrap">
             <div class="flex items-center justify-center">
                 <div class="fixed-square border-r flex items-center justify-center">
                     <Instagram size={24} class="stroke-[1.5px] ml-1"/>

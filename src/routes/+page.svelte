@@ -36,20 +36,18 @@
         {breadCrumbs}
 />
 <style>
-    /* These styles are taken directly from your example and adapted for dark mode */
     .fade-bottom {
-        background: #09090B; /* Dark background color */
-        background: linear-gradient(0deg, rgba(9, 9, 11, 1) 0%, rgba(9, 9, 11, 1) 7%, rgba(9, 9, 11, 0) 100%);
+        background: var(--background);
+        background: linear-gradient(0deg, var(--background) 0%, var(--background) 7%, transparent 100%);
     }
 
     .fade-top {
-        background: #09090B; /* Dark background color */
-        background: linear-gradient(180deg, rgba(9, 9, 11, 1) 0%, rgba(9, 9, 11, 1) 7%, rgba(9, 9, 11, 0) 100%);
+        background: var(--background);
+        background: linear-gradient(180deg, var(--background) 0%, var(--background) 7%, transparent 100%);
     }
 
     .circle-gradient {
-        background: #ffffff; /* Light background for the gradient start */
-        background: radial-gradient(circle, rgba(255, 255, 255, 0) 0%, rgba(9, 9, 11, 1) 85%); /* Gradient from transparent white to dark */
+        background: radial-gradient(circle, transparent 0%, var(--background) 85%);
     }
 
     /* Styles for hover effect on small posts, adapted for better visibility if needed */
@@ -68,7 +66,7 @@
 </style>
 
 
-<div class="w-dvw h-dvh text-sm sm:text-xl md:text-2xl justify-center items-center font-normal text-light overflow-hidden p-12 sm:p-20 flex flex-col md:p-24 space-y-10 bg-black text-white">
+<div class="w-dvw h-dvh text-sm sm:text-xl md:text-2xl justify-center items-center font-normal text-light overflow-hidden p-12 sm:p-20 flex flex-col md:p-24 space-y-10 bg-background text-foreground">
     <div class="text-left w-full">
         <Scrambler
                 characters="A B C D E F G H I J K L M N O P Q R S T U V W X Y Z . ! ? : ; ' + − * / = > < € $ £ ¥ & @ # % _ ~ \ | ( ) [ ] < >"

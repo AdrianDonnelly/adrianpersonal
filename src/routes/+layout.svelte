@@ -8,7 +8,7 @@
 </script>
 
 <ModeWatcher
-        defaultMode={"dark"}
+        defaultMode={"light"}
         themeColors={{ dark: "black", light: "white" }}/>
 
 <Header/>

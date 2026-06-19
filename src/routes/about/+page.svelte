@@ -97,7 +97,7 @@
             </h2>
         </div>
 
-        <p class='text-white max-w-[95%] sm:max-w-[70%] p-4 border-b'>
+        <p class='text-foreground max-w-[95%] sm:max-w-[70%] p-4 border-b'>
             Hey, I'm Adrian, a Software Engineer and a third-year Computer Science student at TU Dublin. I'm currently interning with the CTMC team at Mastercard, where I primarily work with Java to optimize commercial transaction systems. I'm passionate about building things and gaining hands-on experience in software development </p>
 
     </div>
