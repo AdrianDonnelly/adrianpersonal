@@ -22,9 +22,18 @@
 
     const hobbies = [
         '/assets/image0.jpeg',
-        '/assets/image1.jpeg',
         '/assets/image2.jpeg',
         '/assets/image5.jpeg',
+        'assets/CaliforniaHike.JPG',
+        'assets/CaliforniaHike1.JPG',
+        'assets/CaliforniaHike2.JPG',
+        'assets/Bike.jpg',
+        'assets/Guiness.jpg',
+        'assets/Bike1.jpg',
+        'assets/Bike2.jpg',
+
+
+
         '/assets/image6.jpeg',
         '/assets/image7.jpeg',
         '/assets/image8.jpeg',

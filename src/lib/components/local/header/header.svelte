@@ -42,7 +42,7 @@
                 <h1 class="scroll-m-20 text-l font-semibold tracking-tight hover:text-foreground duration-200"><a
                         href="https://github.com/AdrianDonnelly">Github</a></h1>
             </div>
-            <div class="flex flex-row flex-wrap items-center justify-between gap-3 text-muted-foreground mb-3">
+            <div class="flex flex-row gap-3 text-muted-foreground mb-3">
                 <h1 class="scroll-m-20 text-l font-semibold tracking-tight hover:text-foreground duration-200"><a
                         href="/blog">Blog</a></h1>
                 <Separator orientation="vertical"/>
@@ -52,40 +52,6 @@
                 <h1 class="scroll-m-20 text-l font-semibold tracking-tight hover:text-foreground duration-200"><a
                         href="/cv">CV</a></h1>
                 <Separator orientation="vertical"/>
-
-                <NavigationMenu.Root>
-                    <NavigationMenu.List>
-                        <NavigationMenu.Item>
-                            <NavigationMenu.Trigger><h1 class="scroll-m-20 text-l font-semibold tracking-tight hover:text-foreground duration-200">Hobbies</h1></NavigationMenu.Trigger>
-
-                            <NavigationMenu.Content>
-                                <ul class="grid w-l gap-4 p-2">
-                                    <li>
-                                        <NavigationMenu.Link href="/hiking" class="flex-row items-center gap-2">
-                                            <MountainSnow />
-                                            Hiking
-                                        </NavigationMenu.Link>
-
-                                        <NavigationMenu.Link href="/motorbikes" class="flex-row items-center gap-2">
-                                            <Bike />
-                                            Motorbikes
-                                        </NavigationMenu.Link>
-
-                                        <NavigationMenu.Link href="/music" class="flex-row items-center gap-2">
-                                            <Guitar />
-                                            Music
-                                        </NavigationMenu.Link>
-
-                                        <NavigationMenu.Link href="/travel" class="flex-row items-center gap-2">
-                                            <Backpack />
-                                            Travel
-                                        </NavigationMenu.Link>
-                                    </li>
-                                </ul>
-                            </NavigationMenu.Content>
-                        </NavigationMenu.Item>
-                    </NavigationMenu.List>
-                </NavigationMenu.Root>
             </div>
     </div>
     </div>
